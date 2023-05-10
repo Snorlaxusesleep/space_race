@@ -53,12 +53,12 @@ set rc [catch {
   set_property board_part em.avnet.com:zed:part0:1.3 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/ediso/Desktop/lab05/lab05.cache/wt [current_project]
-  set_property parent.project_path C:/Users/ediso/Desktop/lab05/lab05.xpr [current_project]
-  set_property ip_output_repo C:/Users/ediso/Desktop/lab05/lab05.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/user/Documents/.git/space_race/lab05.cache/wt [current_project]
+  set_property parent.project_path C:/Users/user/Documents/.git/space_race/lab05.xpr [current_project]
+  set_property ip_output_repo C:/Users/user/Documents/.git/space_race/lab05.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet C:/Users/ediso/Desktop/lab05/lab05.runs/synth_1/lab05.dcp
-  read_xdc C:/Users/ediso/Desktop/lab05/lab05.srcs/constrs_1/new/lab05.xdc
+  add_files -quiet C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/lab05.dcp
+  read_xdc C:/Users/user/Documents/.git/space_race/lab05.srcs/constrs_1/new/lab05.xdc
   link_design -top lab05 -part xc7z020clg484-1
   write_hwdef -file lab05.hwdef
   close_msg_db -file init_design.pb

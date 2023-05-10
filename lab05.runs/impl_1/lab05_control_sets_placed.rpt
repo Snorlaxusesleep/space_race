@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
-| Date         : Tue May 09 22:33:19 2023
-| Host         : DESKTOP-3VPPBLD running 64-bit major release  (build 9200)
+| Date         : Wed May 10 16:20:15 2023
+| Host         : DESKTOP-TE2J1PM running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file lab05_control_sets_placed.rpt
 | Design       : lab05
 | Device       : xc7z020
@@ -23,7 +23,7 @@ Table of Contents
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
 | Number of unique control sets                            |     8 |
-| Unused register locations in slices containing registers |    17 |
+| Unused register locations in slices containing registers |    18 |
 +----------------------------------------------------------+-------+
 
 
@@ -36,27 +36,27 @@ Table of Contents
 | No           | No                    | No                     |               4 |            4 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |              94 |           25 |
-| Yes          | No                    | No                     |              32 |            8 |
+| Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              61 |           17 |
+| Yes          | Yes                   | No                     |              92 |           25 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 3. Detailed Control Set Information
 -----------------------------------
 
-+-------------------+------------------------+--------------------+------------------+----------------+
-|    Clock Signal   |      Enable Signal     |  Set/Reset Signal  | Slice Load Count | Bel Load Count |
-+-------------------+------------------------+--------------------+------------------+----------------+
-|  pulse_BUFG       |                        |                    |                1 |              1 |
-|  clk_IBUF_BUFG    |                        |                    |                3 |              3 |
-|  y_reg[3]_i_4_n_0 | sel                    | clear              |                8 |             29 |
-|  clk_IBUF_BUFG    |                        | u_clk10hz/pulse    |                8 |             31 |
-|  pulse_BUFG       |                        | vcount             |                8 |             31 |
-|  clk_IBUF_BUFG    |                        | u_clk50mhz/pulse_0 |                9 |             32 |
-|  pulse_BUFG       | vcount                 | vcount[31]_i_1_n_0 |                9 |             32 |
-|  y_reg[3]_i_4_n_0 | color_count[0]_i_1_n_0 |                    |                8 |             32 |
-+-------------------+------------------------+--------------------+------------------+----------------+
++--------------------+---------------+--------------------+------------------+----------------+
+|    Clock Signal    | Enable Signal |  Set/Reset Signal  | Slice Load Count | Bel Load Count |
++--------------------+---------------+--------------------+------------------+----------------+
+|  pulse_BUFG        |               |                    |                1 |              1 |
+|  clk_IBUF_BUFG     |               |                    |                3 |              3 |
+|  y2_reg[2]_i_4_n_0 | y2[2]_i_2_n_0 | y2[2]_i_1_n_0      |                8 |             30 |
+|  y2_reg[2]_i_4_n_0 | sel           | clear              |                8 |             30 |
+|  clk_IBUF_BUFG     |               | u_clk10hz/pulse    |                8 |             31 |
+|  pulse_BUFG        |               | vcount             |                8 |             31 |
+|  clk_IBUF_BUFG     |               | u_clk50mhz/pulse_0 |                9 |             32 |
+|  pulse_BUFG        | vcount        | vcount[31]_i_1_n_0 |                9 |             32 |
++--------------------+---------------+--------------------+------------------+----------------+
 
 
 +--------+-----------------------+

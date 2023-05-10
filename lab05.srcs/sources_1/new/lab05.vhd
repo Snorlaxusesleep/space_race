@@ -7,26 +7,26 @@ entity lab05 is
         clk : in std_logic;
         hsync, vsync : out std_logic;
         red, green, blue : out std_logic_vector(3 downto 0);
-        BTNU, BTND : IN STD_LOGIC
+        BTNU, BTND, BTNR, BTNL : IN STD_LOGIC
     );        
 end lab05;
 
 architecture Behavioral of lab05 is
     
-    constant H_TOTAL : integer := 1344 - 1;
-    constant H_SYNC : integer := 48 - 1;
-    constant H_BACK : integer := 240 - 1;
-    constant H_START: integer := 48 + 240 - 1;
-    constant H_ACTIVE: integer := 1024 - 1;
-    constant H_END: integer := 1344 - 32 - 1;
-    constant H_FRONT : integer := 32 - 1;
-    constant V_TOTAL : integer := 625 - 1;
-    constant V_SYNC : integer := 3 - 1;
-    constant V_BACK : integer := 12 - 1;
-    constant V_START: integer := 3 + 12 - 1;
-    constant V_ACTIVE : integer := 600 - 1;
-    constant V_END : integer := 625 - 10 - 1;
-    constant V_FRONT : integer := 10 - 1;
+    constant H_TOTAL : integer := 1344 - 1;     --h max
+    constant H_SYNC : integer := 48 - 1;        --start of h sync
+    constant H_BACK : integer := 240 - 1;       --end of h sync
+    constant H_START: integer := 48 + 240 - 1;  --addressable horizontal video start
+    constant H_ACTIVE: integer := 1024 - 1;     --width
+    constant H_END: integer := 1344 - 32 - 1;   --addressable horizontal video end
+    constant H_FRONT : integer := 32 - 1;       --no use
+    constant V_TOTAL : integer := 625 - 1;      --v max
+    constant V_SYNC : integer := 3 - 1;         --start of v sync
+    constant V_BACK : integer := 12 - 1;        --end of h sync
+    constant V_START: integer := 3 + 12 - 1;    --addressable vertical video start
+    constant V_ACTIVE : integer := 600 - 1;     --height
+    constant V_END : integer := 625 - 10 - 1;   --addressable vertical video end
+    constant V_FRONT : integer := 10 - 1;       --no use
     signal hcount, vcount : integer;
     
     component clock_divider is
@@ -38,14 +38,16 @@ architecture Behavioral of lab05 is
     
     constant X_STEP : integer := 40;
     constant Y_STEP : integer := 40;
-    constant X_SIZE : integer := 80;
-    constant Y_SIZE : integer := 120;
-    signal x : integer := H_START;
-    signal y : integer := V_END + Y_SIZE;
-    signal dx : integer := X_STEP;
-    signal dy : integer := Y_STEP;
-    -- signal direction : integer := 0;
+    constant X_SIZE : integer := 40;
+    constant Y_SIZE : integer := 40;
+    signal x1 : integer := H_START + 256;
+    signal y1 : integer := V_END - Y_SIZE;
+    signal x2 : integer := H_START + 768;
+    signal y2 : integer := V_END - Y_SIZE;
+    signal dx : integer := X_STEP; -- player y speed
+    signal dy : integer := Y_STEP; -- obstacle x speed
     type colors is (C_Black, C_Green, C_Blue, C_Red, C_White, C_Yellow);
+    -- unnecessary
     type T_1D is array(0 to 4) of colors;
     constant fig : T_1D := (C_Green, C_Blue, C_Red, C_White, C_Yellow);
     signal color : colors := C_White;
@@ -53,9 +55,12 @@ architecture Behavioral of lab05 is
     
     
 begin
-    
+
+    u_clk1hz : clock_divider generic map(N => 50000000) port map(clk, clk_1Hz);
+    u_clk10hz : clock_divider generic map(N => 5000000) port map(clk, clk_10Hz);  
     u_clk50mhz : clock_divider generic map(N => 1) port map(clk, clk_50MHz);
-    
+ 
+    -- increase h count (move pixel by pixel hozitontally)
     pixel_count_proc : process (clk_50MHz)
     begin
         if (rising_edge(clk_50MHz)) then
@@ -76,6 +81,7 @@ begin
         end if;
     end process hsync_gen_proc;
     
+    -- increase v count (move pixel by pixel vertically)
     line_count_proc : process (clk_50MHz)
     begin
         if (rising_edge(clk_50MHz)) then
@@ -98,37 +104,46 @@ begin
         end if;
     end process vsync_gen_proc;
     
-    u_clk1hz : clock_divider generic map(N => 50000000) port map(clk, clk_1Hz);
-    u_clk10hz : clock_divider generic map(N => 5000000) port map(clk, clk_10Hz);
-    
     process (clk_10Hz)
     begin
         if (rising_edge(clk_10Hz)) then
             if (BTNU = '1') then
-                if ( y <= V_START) then
-                    y <= V_END - Y_SIZE;
+                if ( y1 <= V_START) then
+                    y1 <= V_END - Y_SIZE;
                 else
-                    y <= y - dy;
-                    color_count <= color_count + 1;
+                    y1 <= y1 - dy;
                 end if;
             elsif (BTND = '1') then
-                if ( y + Y_SIZE >= V_END) then
-                    y <= V_END - Y_SIZE;
+                if ( y1 + Y_SIZE >= V_END) then
+                    y1 <= V_END - Y_SIZE;
                 else
-                    y <= y + dy;
-                    color_count <= color_count + 1;
+                    y1 <= y1 + dy;
                 end if;
             end if;
-            
+            if (BTNR = '1') then
+                if ( y2 <= V_START) then
+                    y2 <= V_END - Y_SIZE;
+                else
+                    y2 <= y2 - dy;
+                end if;
+            elsif (BTNL = '1') then
+                if ( y2 + Y_SIZE >= V_END) then
+                    y2 <= V_END - Y_SIZE;
+                else
+                    y2 <= y2 + dy;
+                end if;
+            end if;
         end if;
     end process;
     
-    process (hcount, vcount, x, y)
+    process (hcount, vcount, x1, y1)
     begin
         if ((hcount >= H_START and hcount < H_END) and (vcount >= V_START and vcount < V_TOTAL)) then
-            if (x <= hcount and hcount < x + X_SIZE and y < vcount and vcount < y + Y_SIZE) then
-                color <= fig(color_count mod 5);
-            else
+            if (x1 <= hcount and hcount < x1 + X_SIZE and y1 < vcount and vcount < y1 + Y_SIZE) then
+                color <= C_White;
+            elsif (x2 <= hcount and hcount < x2 + X_SIZE and y2 < vcount and vcount < y2 + Y_SIZE) then
+                color <= C_White;
+            else -- need to add asternoids color
                 color <= C_Black;
             end if;
         else

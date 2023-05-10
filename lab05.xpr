@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="17" Path="C:/Users/ediso/Desktop/lab05/lab05.xpr">
+<Project Version="7" Minor="17" Path="C:/Users/user/Documents/.git/space_race/lab05.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="87aeb4262b3e47b094f977c46a1c110f"/>
@@ -73,6 +73,7 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_ten_gig_eth_mac_0_0/design_1_ten_gig_eth_mac_0_0.xci"/>
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
