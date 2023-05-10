@@ -27,6 +27,7 @@ architecture Behavioral of lab05 is
     constant V_ACTIVE : integer := 600 - 1;     --height
     constant V_END : integer := 625 - 10 - 1;   --addressable vertical video end
     constant V_FRONT : integer := 10 - 1;       --no use
+    constant NumObstacles : integer := 5;
     signal hcount, vcount : integer;
     
     component clock_divider is
@@ -34,22 +35,26 @@ architecture Behavioral of lab05 is
         port( clk : in std_logic;
         clk_out : out std_logic );
     end component;
-    signal clk_1Hz, clk_10Hz, clk_50MHz : std_logic;
+    signal clk_1Hz, clk_10Hz, clk_50MHz, clk_60Hz : std_logic;
     
-    constant X_STEP : integer := 40;
-    constant Y_STEP : integer := 40;
+    constant X_STEP : integer := 5;
+    constant Y_STEP : integer := 5;
     constant X_SIZE : integer := 40;
     constant Y_SIZE : integer := 40;
     signal x1 : integer := H_START + 256;
     signal y1 : integer := V_END - Y_SIZE;
     signal x2 : integer := H_START + 768;
     signal y2 : integer := V_END - Y_SIZE;
-    signal dx : integer := X_STEP; -- player y speed
-    signal dy : integer := Y_STEP; -- obstacle x speed
+    signal dx : integer := X_STEP; -- obstacle x speed
+    signal dy : integer := Y_STEP; -- player y speed
+    type asteroid_type is record
+        x : integer range H_START to H_END;
+        y : integer range V_START to V_END;
+    end record;
+    type asteroid_array is array (0 to NumObstacles-1) of asteroid_type;
+    
     type colors is (C_Black, C_Green, C_Blue, C_Red, C_White, C_Yellow);
-    -- unnecessary
-    type T_1D is array(0 to 4) of colors;
-    constant fig : T_1D := (C_Green, C_Blue, C_Red, C_White, C_Yellow);
+
     signal color : colors := C_White;
     signal  color_count : integer := 0;
     
@@ -57,7 +62,8 @@ architecture Behavioral of lab05 is
 begin
 
     u_clk1hz : clock_divider generic map(N => 50000000) port map(clk, clk_1Hz);
-    u_clk10hz : clock_divider generic map(N => 5000000) port map(clk, clk_10Hz);  
+    u_clk10hz : clock_divider generic map(N => 5000000) port map(clk, clk_10Hz);
+    u_clk60hz : clock_divider generic map(N => 833333) port map(clk, clk_60Hz);
     u_clk50mhz : clock_divider generic map(N => 1) port map(clk, clk_50MHz);
  
     -- increase h count (move pixel by pixel hozitontally)
@@ -104,9 +110,9 @@ begin
         end if;
     end process vsync_gen_proc;
     
-    process (clk_10Hz)
+    process (clk_60Hz)
     begin
-        if (rising_edge(clk_10Hz)) then
+        if (rising_edge(clk_60Hz)) then
             if (BTNU = '1') then
                 if ( y1 <= V_START) then
                     y1 <= V_END - Y_SIZE;
@@ -146,9 +152,12 @@ begin
             else -- need to add asternoids color
                 color <= C_Black;
             end if;
+            
+            if (hcount>= 
         else
             color <= C_Black;
         end if;
+        
     end process;
     
     process (color)
