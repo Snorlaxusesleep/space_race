@@ -1,0 +1,1474 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Wed May 10 17:24:57 2023
+# Process ID: 7668
+# Current directory: C:/Users/user/Documents/.git/space_race
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11860 C:\Users\user\Documents\.git\space_race\lab05.xpr
+# Log file: C:/Users/user/Documents/.git/space_race/vivado.log
+# Journal file: C:/Users/user/Documents/.git/space_race\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/user/Documents/.git/space_race/lab05.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IP Output Repository Path: Could not find the directory 'C:/Users/user/Documents/.git/space_race/lab05.cache/ip'.
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'C:/Users/user/Documents/.git/space_race/lab05.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.3/data/ip'.
+close_project
+****** Webtalk v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/user/Documents/.git/space_race/lab05.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed May 10 19:06:35 2023...
+open_project {C:/Users/user/OneDrive - The Chinese University of Hong Kong/Attachments/Final_Project/Final_Project.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/user/OneDrive - The Chinese University of Hong Kong/Attachments/Final_Project'
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IP Output Repository Path: Could not find the directory 'C:/Users/user/OneDrive - The Chinese University of Hong Kong/Attachments/Final_Project/Final_Project.cache/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.3/data/ip'.
+close_project
+open_project {C:/Users/user/OneDrive - The Chinese University of Hong Kong/Attachments/CENG3430/CENG3430.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/user/OneDrive - The Chinese University of Hong Kong/Attachments/CENG3430'
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IP Output Repository Path: Could not find the directory 'C:/Users/user/OneDrive - The Chinese University of Hong Kong/Attachments/CENG3430/CENG3430.cache/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.3/data/ip'.
+close_project
+open_project C:/Users/user/Documents/.git/space_race/lab05.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IP Output Repository Path: Could not find the directory 'C:/Users/user/Documents/.git/space_race/lab05.cache/ip'.
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'C:/Users/user/Documents/.git/space_race/lab05.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.3/data/ip'.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Wed May 10 19:22:26 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Wed May 10 19:22:26 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+[Wed May 10 19:36:36 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.3
+  **** Build date : Oct 10 2016-19:47:06
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248B0221B
+current_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+launch_runs impl_1 -to_step write_bitstream
+[Wed May 10 19:38:18 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Wed May 10 19:51:00 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Wed May 10 19:51:00 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Wed May 10 19:53:33 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Wed May 10 19:53:33 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Wed May 10 20:10:15 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Wed May 10 20:10:15 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Wed May 10 20:10:46 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Wed May 10 20:10:46 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Wed May 10 21:14:20 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Wed May 10 21:14:20 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Wed May 10 21:16:05 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Wed May 10 21:16:05 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Wed May 10 21:35:51 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Wed May 10 21:35:51 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Wed May 10 21:49:55 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Wed May 10 21:49:55 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Wed May 10 21:50:21 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Wed May 10 21:50:21 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Wed May 10 21:55:49 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Wed May 10 21:55:49 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Wed May 10 22:06:55 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Wed May 10 22:06:55 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+[Wed May 10 22:08:50 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Wed May 10 22:12:09 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Wed May 10 22:12:09 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Wed May 10 22:15:54 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Wed May 10 22:15:54 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Wed May 10 22:21:25 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Wed May 10 22:21:25 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Wed May 10 22:26:49 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Wed May 10 22:26:49 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Wed May 10 22:30:27 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Wed May 10 22:30:27 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+[Wed May 10 22:32:19 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Wed May 10 22:36:04 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Wed May 10 22:36:04 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Wed May 10 22:39:07 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Wed May 10 22:39:07 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Wed May 10 22:41:25 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Wed May 10 22:41:25 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Wed May 10 22:43:50 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Wed May 10 22:43:50 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Wed May 10 22:48:41 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Wed May 10 22:48:41 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Wed May 10 22:53:24 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Wed May 10 22:53:24 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Wed May 10 22:56:57 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Wed May 10 22:56:57 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Wed May 10 23:00:25 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Wed May 10 23:00:25 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Wed May 10 23:03:42 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Wed May 10 23:03:42 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Wed May 10 23:07:17 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Wed May 10 23:07:17 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Wed May 10 23:09:57 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Wed May 10 23:09:57 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Wed May 10 23:21:02 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Wed May 10 23:21:03 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Wed May 10 23:33:59 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Wed May 10 23:33:59 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Wed May 10 23:51:07 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Wed May 10 23:51:07 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 00:09:35 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Thu May 11 00:09:35 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 00:24:20 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Thu May 11 00:24:20 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 02:48:36 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Thu May 11 02:48:36 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 02:57:29 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Thu May 11 02:57:29 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 03:06:03 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Thu May 11 03:06:03 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 03:09:30 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Thu May 11 03:09:30 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 03:16:19 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Thu May 11 03:16:19 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 03:22:58 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Thu May 11 03:22:58 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 03:26:35 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Thu May 11 03:26:35 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 03:29:19 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Thu May 11 03:29:19 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 03:33:04 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Thu May 11 03:33:04 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 03:39:35 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Thu May 11 03:39:35 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 03:43:32 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Thu May 11 03:43:32 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 03:46:58 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Thu May 11 03:46:58 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 03:47:28 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Thu May 11 03:47:28 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 03:50:47 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Thu May 11 03:50:47 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 03:51:12 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Thu May 11 03:51:12 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 03:54:23 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Thu May 11 03:54:23 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 04:09:41 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Thu May 11 04:09:41 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+ERROR: [filemgmt 56-23] Illegal GUI graph access between updates.
+ERROR: [filemgmt 20-1788] Illegal access of HADGNode between graph update events.
+ERROR: [filemgmt 56-23] Illegal GUI graph access between updates.
+ERROR: [filemgmt 20-1788] Illegal access of HADGNode between graph update events.
+ERROR: [filemgmt 20-1788] Illegal access of HADGNode between graph update events.
+ERROR: [filemgmt 56-23] Illegal GUI graph access between updates.
+ERROR: [filemgmt 56-23] Illegal GUI graph access between updates.
+ERROR: [filemgmt 56-23] Illegal GUI graph access between updates.
+ERROR: [filemgmt 20-1788] Illegal access of HADGNode between graph update events.
+ERROR: [filemgmt 56-23] Illegal GUI graph access between updates.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 04:27:20 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Thu May 11 04:27:20 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 04:29:42 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Thu May 11 04:29:42 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 04:31:33 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Thu May 11 04:31:33 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 04:40:53 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Thu May 11 04:40:53 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 04:41:27 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Thu May 11 04:41:27 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+ERROR: [filemgmt 56-23] Illegal GUI graph access between updates.
+ERROR: [filemgmt 20-1788] Illegal access of HADGNode between graph update events.
+ERROR: [filemgmt 20-1788] Illegal access of HADGNode between graph update events.
+ERROR: [filemgmt 20-1788] Illegal access of HADGNode between graph update events.
+ERROR: [filemgmt 56-23] Illegal GUI graph access between updates.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 04:43:52 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Thu May 11 04:43:52 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 04:45:34 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Thu May 11 04:45:34 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 04:46:47 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Thu May 11 04:46:47 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 04:47:34 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Thu May 11 04:47:34 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 04:50:48 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Thu May 11 04:50:48 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 04:51:15 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Thu May 11 04:51:15 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 04:55:38 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Thu May 11 04:55:38 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 04:55:41 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Thu May 11 04:55:41 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 04:56:05 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Thu May 11 04:56:05 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 04:58:12 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Thu May 11 04:58:12 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 05:00:42 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 05:02:08 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Thu May 11 05:02:08 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 05:05:51 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Thu May 11 05:05:51 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 05:08:31 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Thu May 11 05:08:31 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 05:11:07 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Thu May 11 05:11:07 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 05:16:19 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Thu May 11 05:16:19 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 05:18:42 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Thu May 11 05:18:42 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 05:26:15 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Thu May 11 05:26:15 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 05:44:50 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Thu May 11 05:44:50 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 05:47:41 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Thu May 11 05:47:41 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Thu May 11 05:50:40 2023] Launched synth_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/runme.log
+[Thu May 11 05:50:40 2023] Launched impl_1...
+Run output will be captured here: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu May 11 05:54:05 2023...

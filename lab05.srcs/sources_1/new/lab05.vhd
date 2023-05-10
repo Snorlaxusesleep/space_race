@@ -27,7 +27,8 @@ architecture Behavioral of lab05 is
     constant V_ACTIVE : integer := 600 - 1;     --height
     constant V_END : integer := 625 - 10 - 1;   --addressable vertical video end
     constant V_FRONT : integer := 10 - 1;       --no use
-    constant NumObstacles : integer := 5;
+    constant asteroid_size : integer := 5;
+    constant num_obstacles : integer := 5;
     signal hcount, vcount : integer;
     
     component clock_divider is
@@ -37,8 +38,8 @@ architecture Behavioral of lab05 is
     end component;
     signal clk_1Hz, clk_10Hz, clk_50MHz, clk_60Hz : std_logic;
     
-    constant X_STEP : integer := 5;
-    constant Y_STEP : integer := 5;
+    constant X_STEP : integer := 3;
+    constant Y_STEP : integer := 3;
     constant X_SIZE : integer := 40;
     constant Y_SIZE : integer := 40;
     signal x1 : integer := H_START + 256;
@@ -47,25 +48,44 @@ architecture Behavioral of lab05 is
     signal y2 : integer := V_END - Y_SIZE;
     signal dx : integer := X_STEP; -- obstacle x speed
     signal dy : integer := Y_STEP; -- player y speed
+    type direction is (Right, Left);
     type asteroid_type is record
         x : integer range H_START to H_END;
         y : integer range V_START to V_END;
+        dir : direction;
+        is_activated : boolean;
     end record;
-    type asteroid_array is array (0 to NumObstacles-1) of asteroid_type;
+    type asteroid_array is array (natural range <>) of asteroid_type;
+    signal asteroids : asteroid_array(0 to num_obstacles-1) := (
+    (x => H_START+1, y => V_START+60, dir => Right, is_activated => true),
+    (x => H_START+800, y => V_START+120, dir => Left, is_activated => true),
+    (x => H_START+120, y => V_START+180, dir => Right, is_activated => true),
+    (x => H_START+600, y => V_START+240, dir => Left, is_activated => true),
+    (x => H_START+240, y => V_START+300, dir => Right, is_activated => true)
+    );
     
     type colors is (C_Black, C_Green, C_Blue, C_Red, C_White, C_Yellow);
-
     signal color : colors := C_White;
-    signal  color_count : integer := 0;
+    signal color_count : integer := 0;
+    signal i : integer := 0;
     
-    
+
 begin
 
     u_clk1hz : clock_divider generic map(N => 50000000) port map(clk, clk_1Hz);
     u_clk10hz : clock_divider generic map(N => 5000000) port map(clk, clk_10Hz);
     u_clk60hz : clock_divider generic map(N => 833333) port map(clk, clk_60Hz);
     u_clk50mhz : clock_divider generic map(N => 1) port map(clk, clk_50MHz);
- 
+    
+    -- asteroids declaration. process executed once only.
+--    process
+--    begin
+--        for i in 0 to num_obstacles-1 loop
+--            asteroids(i) <= (x => H_START+(101*i), y => V_START+(101*i), dir => Right);
+--        end loop;
+--    end process;
+    
+    
     -- increase h count (move pixel by pixel hozitontally)
     pixel_count_proc : process (clk_50MHz)
     begin
@@ -110,6 +130,7 @@ begin
         end if;
     end process vsync_gen_proc;
     
+    -- movement of player 1 and player 2
     process (clk_60Hz)
     begin
         if (rising_edge(clk_60Hz)) then
@@ -142,6 +163,40 @@ begin
         end if;
     end process;
     
+    -- movement of asternoids
+    process (clk_60Hz)
+    begin
+        if (rising_edge(clk_60Hz)) then
+            for i in 0 to num_obstacles-1 loop
+                if asteroids(i).is_activated = true then
+                    if asteroids(i).dir = Right then
+                        asteroids(i).x <= asteroids(i).x + dx;
+                    elsif asteroids(i).dir = Left then
+                        asteroids(i).x <= asteroids(i).x - dx;
+                    else
+                        asteroids(i).x <= asteroids(i).x - dx;
+                    end if;
+                    if (asteroids(i).x + asteroid_size >= H_END or asteroids(i).x <= H_START) then
+                        asteroids(i).is_activated <= false;
+                        --asteroids(i).y <= random();
+                        --direction and x according to y value
+                        --if (asteroids(i).y mod 2) = 0 then
+                        --    asteroids(i).dir <= Right;
+                        --    asteroids(i).x <= H_START;
+                        --elsif (asteroids(i).y mod 2) = 1 then
+                        --    asteroids(i).dir <= Left;
+                        --    asteroids(i).x <= H_END - 50;
+                        --else
+                        --    asteroids(i).dir <= Left;
+                        --   asteroids(i).x <= H_END - 50;
+                        --end if;
+                        --asteroids(i).is_activated <= true;
+                    end if;
+                end if;
+            end loop;
+        end if;
+    end process;
+    
     process (hcount, vcount, x1, y1)
     begin
         if ((hcount >= H_START and hcount < H_END) and (vcount >= V_START and vcount < V_TOTAL)) then
@@ -149,11 +204,20 @@ begin
                 color <= C_White;
             elsif (x2 <= hcount and hcount < x2 + X_SIZE and y2 < vcount and vcount < y2 + Y_SIZE) then
                 color <= C_White;
-            else -- need to add asternoids color
+            else
                 color <= C_Black;
             end if;
             
-            if (hcount>= 
+            -- asteroids visualization
+            for i in 0 to num_obstacles-1 loop
+                if (asteroids(i).x <= hcount and hcount < asteroids(i).x + asteroid_size and asteroids(i).y < vcount and vcount < asteroids(i).y + asteroid_size) then
+                    color <= C_White;
+                end if;
+            end loop;
+            -- a center line
+            if (hcount >= 795 and hcount < 805) then
+                color <= C_White;
+            end if;
         else
             color <= C_Black;
         end if;
