@@ -48,6 +48,8 @@ architecture Behavioral of lab05 is
     signal y2 : integer := V_END - Y_SIZE;
     signal dx : integer := X_STEP; -- obstacle x speed
     signal dy : integer := Y_STEP; -- player y speed
+    signal collided_1 : boolean := false; 
+    signal collided_2 : boolean := false; 
     type direction is (Right, Left);
     type asteroid_type is record
         x : integer range H_START to H_END;
@@ -140,35 +142,61 @@ begin
     process (clk_60Hz)
     begin
         if (rising_edge(clk_60Hz)) then
-            if (BTNU = '1') then
-                if ( y1 <= V_START) then
-                    y1 <= V_END - Y_SIZE;
-                else
-                    y1 <= y1 - dy;
+            for i in 0 to num_obstacles-1 loop
+                if asteroids(i).dir = Left then
+                    if (asteroids(i).x <= x1+X_SIZE) and (asteroids(i).x >= x1) and (asteroids(i).y >= y1) and (asteroids(i).y <= y1+ Y_SIZE) then
+                        collided_1 <= true;
+                    end if;
+                    if (asteroids(i).x <= x2+X_SIZE) and (asteroids(i).x >= x2) and (asteroids(i).y >= y2) and (asteroids(i).y <= y2+ Y_SIZE) then
+                        collided_2 <= true;
+                    end if;
                 end if;
-            elsif (BTND = '1') then
-                if ( y1 + Y_SIZE >= V_END) then
-                    y1 <= V_END - Y_SIZE;
-                else
-                    y1 <= y1 + dy;
+            end loop;
+            if collided_1 = true then
+                y1 <= V_END - Y_SIZE;
+                collided_1 <=false;
+            else
+                if (BTNU = '1') then
+                    if ( y1 <= V_START) then
+                        y1 <= V_END - Y_SIZE;
+                    else
+                        y1 <= y1 - dy;
+                    end if;
+                elsif (BTND = '1') then
+                    if ( y1 + Y_SIZE >= V_END) then
+                        y1 <= V_END - Y_SIZE;
+                    else
+                        y1 <= y1 + dy;
+                    end if;
                 end if;
             end if;
-            if (BTNR = '1') then
-                if ( y2 <= V_START) then
-                    y2 <= V_END - Y_SIZE;
-                else
-                    y2 <= y2 - dy;
-                end if;
-            elsif (BTNL = '1') then
-                if ( y2 + Y_SIZE >= V_END) then
-                    y2 <= V_END - Y_SIZE;
-                else
-                    y2 <= y2 + dy;
+            if collided_2 = true then
+                y2 <= V_END - Y_SIZE;
+                collided_2 <= false;
+            else
+                if (BTNR = '1') then
+                    if ( y2 <= V_START) then
+                        y2 <= V_END - Y_SIZE;
+                    else
+                        y2 <= y2 - dy;
+                    end if;
+                elsif (BTNL = '1') then
+                    if ( y2 + Y_SIZE >= V_END) then
+                        y2 <= V_END - Y_SIZE;
+                    else
+                        y2 <= y2 + dy;
+                    end if;
                 end if;
             end if;
         end if;
     end process;
     
+
+    -- process (asteroids, x1, y1, x2, y2)
+    -- begin
+        
+    -- end process;
+
     -- movement of asternoids
     process (clk_60Hz)
     begin

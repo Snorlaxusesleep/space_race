@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
-| Date         : Thu May 11 16:46:46 2023
+| Date         : Thu May 11 17:35:44 2023
 | Host         : DESKTOP-3VPPBLD running 64-bit major release  (build 9200)
 | Command      : report_io -file lab05_io_placed.rpt
 | Design       : lab05

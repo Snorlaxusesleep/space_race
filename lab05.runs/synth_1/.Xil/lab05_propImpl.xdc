@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/ediso/Desktop/spacerace/lab05.srcs/constrs_1/new/lab05.xdc rfile:../../../lab05.srcs/constrs_1/new/lab05.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/ediso/Documents/GitHub/space_race/lab05.srcs/constrs_1/new/lab05.xdc rfile:../../../lab05.srcs/constrs_1/new/lab05.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN T18 [get_ports {BTNU}]; # "BTNU"
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
