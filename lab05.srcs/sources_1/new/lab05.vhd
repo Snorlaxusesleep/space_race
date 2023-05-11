@@ -7,7 +7,9 @@ entity lab05 is
         clk : in std_logic;
         hsync, vsync : out std_logic;
         red, green, blue : out std_logic_vector(3 downto 0);
-        BTNU, BTND, BTNR, BTNL : IN STD_LOGIC
+        BTNU, BTND, BTNR, BTNL : IN STD_LOGIC;
+        ssd : out STD_LOGIC_VECTOR(6 downto 0);
+        sel : buffer STD_LOGIC
     );        
 end lab05;
 
@@ -30,7 +32,17 @@ architecture Behavioral of lab05 is
     constant asteroid_size : integer := 5;
     constant num_obstacles : integer := 5;
     signal hcount, vcount : integer;
-    
+    signal data_in : STD_LOGIC_VECTOR(7 downto 0);
+    --create component of ssd
+    component ssd_ctrl is
+        port(
+            clk: in STD_LOGIC;
+            data_in:in STD_LOGIC_VECTOR (7 downto 0);
+            sel: buffer STD_LOGIC := '0';
+            ssd: out STD_LOGIC_VECTOR (6 downto 0)
+        );
+    end component;
+    -- create component of clock driver
     component clock_divider is
         generic (N : integer);
         port( clk : in std_logic;
@@ -50,6 +62,8 @@ architecture Behavioral of lab05 is
     signal dy : integer := Y_STEP; -- player y speed
     signal collided_1 : boolean := false; 
     signal collided_2 : boolean := false; 
+    signal score_1 : integer := 0;
+    signal score_2 : integer := 0;
     type direction is (Right, Left);
     type asteroid_type is record
         x : integer range H_START to H_END;
@@ -76,7 +90,8 @@ architecture Behavioral of lab05 is
 
 
 begin
-
+    -- Port map the ssd_ctrl
+    name : ssd_ctrl port map (clk, data_in, sel, ssd);
     u_clk1hz : clock_divider generic map(N => 50000000) port map(clk, clk_1Hz);
     u_clk10hz : clock_divider generic map(N => 5000000) port map(clk, clk_10Hz);
     u_clk60hz : clock_divider generic map(N => 833333) port map(clk, clk_60Hz);
@@ -159,6 +174,7 @@ begin
                 if (BTNU = '1') then
                     if ( y1 <= V_START) then
                         y1 <= V_END - Y_SIZE;
+                        score_1 <= 
                     else
                         y1 <= y1 - dy;
                     end if;
