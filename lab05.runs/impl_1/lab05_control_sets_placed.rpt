@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
-| Date         : Tue May 09 22:33:19 2023
-| Host         : DESKTOP-3VPPBLD running 64-bit major release  (build 9200)
+| Date         : Thu May 11 05:51:44 2023
+| Host         : DESKTOP-TE2J1PM running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file lab05_control_sets_placed.rpt
 | Design       : lab05
 | Device       : xc7z020
@@ -22,8 +22,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |     8 |
-| Unused register locations in slices containing registers |    17 |
+| Number of unique control sets                            |    13 |
+| Unused register locations in slices containing registers |    34 |
 +----------------------------------------------------------+-------+
 
 
@@ -33,37 +33,43 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |               4 |            4 |
+| No           | No                    | No                     |               8 |            7 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              94 |           25 |
-| Yes          | No                    | No                     |              32 |            8 |
+| No           | Yes                   | No                     |              95 |           26 |
+| Yes          | No                    | No                     |              55 |           19 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              61 |           17 |
+| Yes          | Yes                   | No                     |              96 |           25 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 3. Detailed Control Set Information
 -----------------------------------
 
-+-------------------+------------------------+--------------------+------------------+----------------+
-|    Clock Signal   |      Enable Signal     |  Set/Reset Signal  | Slice Load Count | Bel Load Count |
-+-------------------+------------------------+--------------------+------------------+----------------+
-|  pulse_BUFG       |                        |                    |                1 |              1 |
-|  clk_IBUF_BUFG    |                        |                    |                3 |              3 |
-|  y_reg[3]_i_4_n_0 | sel                    | clear              |                8 |             29 |
-|  clk_IBUF_BUFG    |                        | u_clk10hz/pulse    |                8 |             31 |
-|  pulse_BUFG       |                        | vcount             |                8 |             31 |
-|  clk_IBUF_BUFG    |                        | u_clk50mhz/pulse_0 |                9 |             32 |
-|  pulse_BUFG       | vcount                 | vcount[31]_i_1_n_0 |                9 |             32 |
-|  y_reg[3]_i_4_n_0 | color_count[0]_i_1_n_0 |                    |                8 |             32 |
-+-------------------+------------------------+--------------------+------------------+----------------+
++--------------------+-----------------------------------+--------------------+------------------+----------------+
+|    Clock Signal    |           Enable Signal           |  Set/Reset Signal  | Slice Load Count | Bel Load Count |
++--------------------+-----------------------------------+--------------------+------------------+----------------+
+|  clk_IBUF_BUFG     |                                   |                    |                2 |              3 |
+|  y2_reg[0]_i_4_n_0 |                                   |                    |                5 |              5 |
+|  y2_reg[0]_i_4_n_0 | asteroids_reg[0][is_activated]__0 |                    |                4 |             11 |
+|  y2_reg[0]_i_4_n_0 | asteroids_reg[1][is_activated]__0 |                    |                5 |             11 |
+|  y2_reg[0]_i_4_n_0 | asteroids_reg[2][is_activated]__0 |                    |                3 |             11 |
+|  y2_reg[0]_i_4_n_0 | asteroids_reg[3][is_activated]__0 |                    |                3 |             11 |
+|  y2_reg[0]_i_4_n_0 | asteroids_reg[4][is_activated]__0 |                    |                4 |             11 |
+|  clk_IBUF_BUFG     |                                   | u_clk60hz/pulse    |                8 |             31 |
+|  y2_reg[0]_i_4_n_0 | y2[0]_i_2_n_0                     | y2[0]_i_1_n_0      |                8 |             32 |
+|  y2_reg[0]_i_4_n_0 | sel                               | clear              |                8 |             32 |
+|  pulse_BUFG        |                                   | hcount[31]_i_1_n_0 |                9 |             32 |
+|  pulse_BUFG        | vcount                            | vcount[31]_i_1_n_0 |                9 |             32 |
+|  clk_IBUF_BUFG     |                                   | u_clk50mhz/pulse_0 |                9 |             32 |
++--------------------+-----------------------------------+--------------------+------------------+----------------+
 
 
 +--------+-----------------------+
 | Fanout | Number of ControlSets |
 +--------+-----------------------+
-| 1      |                     1 |
 | 3      |                     1 |
+| 5      |                     1 |
+| 11     |                     5 |
 | 16+    |                     6 |
 +--------+-----------------------+
 

@@ -14,30 +14,37 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 19164 
+INFO: Helper process launched with PID 19144 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 283.082 ; gain = 73.188
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 283.215 ; gain = 73.656
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'lab05' [C:/Users/ediso/Desktop/lab05/lab05.srcs/sources_1/new/lab05.vhd:14]
-	Parameter N bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'clock_divider' declared at 'C:/Users/ediso/Desktop/lab05/lab05.srcs/sources_1/new/clock_divider.vhd:4' bound to instance 'u_clk50mhz' of component 'clock_divider' [C:/Users/ediso/Desktop/lab05/lab05.srcs/sources_1/new/lab05.vhd:57]
-INFO: [Synth 8-638] synthesizing module 'clock_divider' [C:/Users/ediso/Desktop/lab05/lab05.srcs/sources_1/new/clock_divider.vhd:12]
-	Parameter N bound to: 1 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'clock_divider' (1#1) [C:/Users/ediso/Desktop/lab05/lab05.srcs/sources_1/new/clock_divider.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'lab05' [C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/lab05.vhd:14]
 	Parameter N bound to: 50000000 - type: integer 
-INFO: [Synth 8-3491] module 'clock_divider' declared at 'C:/Users/ediso/Desktop/lab05/lab05.srcs/sources_1/new/clock_divider.vhd:4' bound to instance 'u_clk1hz' of component 'clock_divider' [C:/Users/ediso/Desktop/lab05/lab05.srcs/sources_1/new/lab05.vhd:101]
-INFO: [Synth 8-638] synthesizing module 'clock_divider__parameterized1' [C:/Users/ediso/Desktop/lab05/lab05.srcs/sources_1/new/clock_divider.vhd:12]
+INFO: [Synth 8-3491] module 'clock_divider' declared at 'C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/clock_divider.vhd:4' bound to instance 'u_clk1hz' of component 'clock_divider' [C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/lab05.vhd:75]
+INFO: [Synth 8-638] synthesizing module 'clock_divider' [C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/clock_divider.vhd:12]
 	Parameter N bound to: 50000000 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'clock_divider__parameterized1' (1#1) [C:/Users/ediso/Desktop/lab05/lab05.srcs/sources_1/new/clock_divider.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'clock_divider' (1#1) [C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/clock_divider.vhd:12]
 	Parameter N bound to: 5000000 - type: integer 
-INFO: [Synth 8-3491] module 'clock_divider' declared at 'C:/Users/ediso/Desktop/lab05/lab05.srcs/sources_1/new/clock_divider.vhd:4' bound to instance 'u_clk10hz' of component 'clock_divider' [C:/Users/ediso/Desktop/lab05/lab05.srcs/sources_1/new/lab05.vhd:102]
-INFO: [Synth 8-638] synthesizing module 'clock_divider__parameterized3' [C:/Users/ediso/Desktop/lab05/lab05.srcs/sources_1/new/clock_divider.vhd:12]
+INFO: [Synth 8-3491] module 'clock_divider' declared at 'C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/clock_divider.vhd:4' bound to instance 'u_clk10hz' of component 'clock_divider' [C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/lab05.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'clock_divider__parameterized1' [C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/clock_divider.vhd:12]
 	Parameter N bound to: 5000000 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'clock_divider__parameterized3' (1#1) [C:/Users/ediso/Desktop/lab05/lab05.srcs/sources_1/new/clock_divider.vhd:12]
-WARNING: [Synth 8-614] signal 'color_count' is read in the process but is not in the sensitivity list [C:/Users/ediso/Desktop/lab05/lab05.srcs/sources_1/new/lab05.vhd:126]
-INFO: [Synth 8-256] done synthesizing module 'lab05' (2#1) [C:/Users/ediso/Desktop/lab05/lab05.srcs/sources_1/new/lab05.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'clock_divider__parameterized1' (1#1) [C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/clock_divider.vhd:12]
+	Parameter N bound to: 833333 - type: integer 
+INFO: [Synth 8-3491] module 'clock_divider' declared at 'C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/clock_divider.vhd:4' bound to instance 'u_clk60hz' of component 'clock_divider' [C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/lab05.vhd:77]
+INFO: [Synth 8-638] synthesizing module 'clock_divider__parameterized3' [C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/clock_divider.vhd:12]
+	Parameter N bound to: 833333 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clock_divider__parameterized3' (1#1) [C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/clock_divider.vhd:12]
+	Parameter N bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'clock_divider' declared at 'C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/clock_divider.vhd:4' bound to instance 'u_clk50mhz' of component 'clock_divider' [C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/lab05.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'clock_divider__parameterized5' [C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/clock_divider.vhd:12]
+	Parameter N bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clock_divider__parameterized5' (1#1) [C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/clock_divider.vhd:12]
+WARNING: [Synth 8-614] signal 'x2' is read in the process but is not in the sensitivity list [C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/lab05.vhd:200]
+WARNING: [Synth 8-614] signal 'y2' is read in the process but is not in the sensitivity list [C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/lab05.vhd:200]
+WARNING: [Synth 8-614] signal 'asteroids' is read in the process but is not in the sensitivity list [C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/lab05.vhd:200]
+INFO: [Synth 8-256] done synthesizing module 'lab05' (2#1) [C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/lab05.vhd:14]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 320.527 ; gain = 110.633
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 320.691 ; gain = 111.133
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -47,39 +54,39 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 320.527 ; gain = 110.633
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 320.691 ; gain = 111.133
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/ediso/Desktop/lab05/lab05.srcs/constrs_1/new/lab05.xdc]
-WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 33]]'. [C:/Users/ediso/Desktop/lab05/lab05.srcs/constrs_1/new/lab05.xdc:21]
-Finished Parsing XDC File [C:/Users/ediso/Desktop/lab05/lab05.srcs/constrs_1/new/lab05.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ediso/Desktop/lab05/lab05.srcs/constrs_1/new/lab05.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/lab05_propImpl.xdc].
+Parsing XDC File [C:/Users/user/Documents/.git/space_race/lab05.srcs/constrs_1/new/lab05.xdc]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 33]]'. [C:/Users/user/Documents/.git/space_race/lab05.srcs/constrs_1/new/lab05.xdc:25]
+Finished Parsing XDC File [C:/Users/user/Documents/.git/space_race/lab05.srcs/constrs_1/new/lab05.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/user/Documents/.git/space_race/lab05.srcs/constrs_1/new/lab05.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/lab05_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/lab05_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 643.488 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 643.719 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 643.488 ; gain = 433.594
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 643.719 ; gain = 434.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 643.488 ; gain = 433.594
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 643.719 ; gain = 434.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 643.488 ; gain = 433.594
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 643.719 ; gain = 434.160
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "pulse" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
@@ -87,13 +94,21 @@ INFO: [Synth 8-5545] ROM "pulse" won't be mapped to RAM because address size (32
 INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "pulse" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/ediso/Desktop/lab05/lab05.srcs/sources_1/new/lab05.vhd:107]
-INFO: [Synth 8-5545] ROM "fig[0]2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pulse" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/lab05.vhd:150]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/lab05.vhd:137]
 INFO: [Synth 8-5545] ROM "hcount" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "vcount" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "vcount" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "hcount" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "vcount" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "vcount" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "green" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "blue" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 643.488 ; gain = 433.594
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 643.719 ; gain = 434.160
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -106,19 +121,17 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 6     
-	   2 Input     31 Bit       Adders := 1     
-	   2 Input      3 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 13    
+	   2 Input     11 Bit       Adders := 5     
 +---Registers : 
-	               32 Bit    Registers := 5     
-	                1 Bit    Registers := 3     
+	               32 Bit    Registers := 6     
+	               11 Bit    Registers := 5     
+	                1 Bit    Registers := 9     
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 5     
-	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 6     
 	   7 Input      4 Bit        Muxes := 3     
-	   2 Input      3 Bit        Muxes := 2     
-	   7 Input      3 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 7     
+	  10 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -129,18 +142,17 @@ Hierarchical RTL Component report
 Module lab05 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 3     
-	   2 Input     31 Bit       Adders := 1     
-	   2 Input      3 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 9     
+	   2 Input     11 Bit       Adders := 5     
 +---Registers : 
 	               32 Bit    Registers := 2     
+	               11 Bit    Registers := 5     
+	                1 Bit    Registers := 5     
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 2     
-	   2 Input     31 Bit        Muxes := 1     
 	   7 Input      4 Bit        Muxes := 3     
-	   2 Input      3 Bit        Muxes := 2     
-	   7 Input      3 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 4     
+	  10 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
 Module clock_divider 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -171,6 +183,16 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 1     
+Module clock_divider__parameterized5 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -186,30 +208,22 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5545] ROM "u_clk50mhz/count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "u_clk50mhz/pulse" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "u_clk10hz/count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "u_clk10hz/pulse" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "hcount" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "vcount" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "vcount" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "fig[0]2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_clk60hz/count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_clk60hz/pulse" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "u_clk50mhz/count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "u_clk50mhz/pulse" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "hcount" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "vcount" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "vcount" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "u_clk10hz/count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "u_clk10hz/pulse" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "fig[0]2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\y_reg[0] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/\y_reg[1] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/\y_reg[2] )
-WARNING: [Synth 8-3332] Sequential element (y_reg[0]) is unused and will be removed from module lab05.
-WARNING: [Synth 8-3332] Sequential element (y_reg[1]) is unused and will be removed from module lab05.
-WARNING: [Synth 8-3332] Sequential element (y_reg[2]) is unused and will be removed from module lab05.
+INFO: [Synth 8-5545] ROM "u_clk50mhz/count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_clk50mhz/pulse" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "hcount" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "vcount" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "vcount" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_clk60hz/count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_clk60hz/pulse" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 643.488 ; gain = 433.594
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 643.719 ; gain = 434.160
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -224,10 +238,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 643.488 ; gain = 433.594
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 643.719 ; gain = 434.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 643.488 ; gain = 433.594
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 643.719 ; gain = 434.160
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -239,7 +253,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 643.488 ; gain = 433.594
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 643.719 ; gain = 434.160
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -263,7 +277,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 643.488 ; gain = 433.594
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 643.719 ; gain = 434.160
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -276,7 +290,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 643.488 ; gain = 433.594
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 643.719 ; gain = 434.160
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -288,25 +302,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 643.488 ; gain = 433.594
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 643.719 ; gain = 434.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 643.488 ; gain = 433.594
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 643.719 ; gain = 434.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 643.488 ; gain = 433.594
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 643.719 ; gain = 434.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 643.488 ; gain = 433.594
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 643.719 ; gain = 434.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -323,16 +337,16 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     3|
-|2     |CARRY4 |   155|
-|3     |LUT1   |   232|
-|4     |LUT2   |   318|
-|5     |LUT3   |    61|
-|6     |LUT4   |   115|
-|7     |LUT5   |    22|
-|8     |LUT6   |   157|
-|9     |FDRE   |   186|
-|10    |FDSE   |     5|
-|11    |IBUF   |     3|
+|2     |CARRY4 |   234|
+|3     |LUT1   |   203|
+|4     |LUT2   |   851|
+|5     |LUT3   |    36|
+|6     |LUT4   |   236|
+|7     |LUT5   |    64|
+|8     |LUT6   |    83|
+|9     |FDRE   |   242|
+|10    |FDSE   |    12|
+|11    |IBUF   |     5|
 |12    |OBUF   |    14|
 +------+-------+------+
 
@@ -340,18 +354,18 @@ Report Instance Areas:
 +------+-------------+------------------------------+------+
 |      |Instance     |Module                        |Cells |
 +------+-------------+------------------------------+------+
-|1     |top          |                              |  1271|
-|2     |  u_clk10hz  |clock_divider__parameterized3 |    83|
-|3     |  u_clk50mhz |clock_divider                 |    83|
+|1     |top          |                              |  1983|
+|2     |  u_clk50mhz |clock_divider__parameterized5 |    83|
+|3     |  u_clk60hz  |clock_divider__parameterized3 |    83|
 +------+-------------+------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 643.488 ; gain = 433.594
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 643.719 ; gain = 434.160
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 643.488 ; gain = 110.633
-Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 643.488 ; gain = 433.594
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 643.719 ; gain = 111.133
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 643.719 ; gain = 434.160
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 158 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 239 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 WARNING: [Netlist 29-101] Netlist 'lab05' is not ideal for floorplanning, since the cellview 'lab05' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -360,9 +374,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-55 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+61 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 643.488 ; gain = 433.594
-INFO: [Common 17-1381] The checkpoint 'C:/Users/ediso/Desktop/lab05/lab05.runs/synth_1/lab05.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 643.488 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Tue May 09 22:32:59 2023...
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 643.719 ; gain = 434.160
+INFO: [Common 17-1381] The checkpoint 'C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/lab05.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 643.719 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu May 11 05:51:12 2023...

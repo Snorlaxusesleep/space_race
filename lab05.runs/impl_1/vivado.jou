@@ -2,11 +2,11 @@
 # Vivado v2016.3 (64-bit)
 # SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
 # IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
-# Start of session at: Tue May 09 22:33:05 2023
-# Process ID: 19288
-# Current directory: C:/Users/ediso/Desktop/lab05/lab05.runs/impl_1
+# Start of session at: Thu May 11 05:51:18 2023
+# Process ID: 17416
+# Current directory: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1
 # Command line: vivado.exe -log lab05.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source lab05.tcl -notrace
-# Log file: C:/Users/ediso/Desktop/lab05/lab05.runs/impl_1/lab05.vdi
-# Journal file: C:/Users/ediso/Desktop/lab05/lab05.runs/impl_1\vivado.jou
+# Log file: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1/lab05.vdi
+# Journal file: C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
 source lab05.tcl -notrace
