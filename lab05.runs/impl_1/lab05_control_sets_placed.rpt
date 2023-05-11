@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
-| Date         : Thu May 11 17:35:44 2023
+| Date         : Thu May 11 21:37:22 2023
 | Host         : DESKTOP-3VPPBLD running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file lab05_control_sets_placed.rpt
 | Design       : lab05
@@ -22,8 +22,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    24 |
-| Unused register locations in slices containing registers |    65 |
+| Number of unique control sets                            |    28 |
+| Unused register locations in slices containing registers |    64 |
 +----------------------------------------------------------+-------+
 
 
@@ -33,10 +33,10 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              15 |           13 |
+| No           | No                    | No                     |              13 |           12 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              95 |           26 |
-| Yes          | No                    | No                     |              66 |           25 |
+| No           | Yes                   | No                     |             125 |           33 |
+| Yes          | No                    | No                     |             135 |           50 |
 | Yes          | No                    | Yes                    |               0 |            0 |
 | Yes          | Yes                   | No                     |             151 |           51 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
@@ -45,45 +45,49 @@ Table of Contents
 3. Detailed Control Set Information
 -----------------------------------
 
-+-------------------------------+-----------------------------------+----------------------------+------------------+----------------+
-|          Clock Signal         |           Enable Signal           |      Set/Reset Signal      | Slice Load Count | Bel Load Count |
-+-------------------------------+-----------------------------------+----------------------------+------------------+----------------+
-|  clk_IBUF_BUFG                |                                   |                            |                2 |              3 |
-|  ran_count_reg_rep[7]_i_3_n_0 | asteroids_reg[1][is_activated]__0 | asteroids[1][x][9]_i_1_n_0 |                3 |              4 |
-|  ran_count_reg_rep[7]_i_3_n_0 | asteroids_reg[2][is_activated]__0 | asteroids[2][x][9]_i_1_n_0 |                3 |              4 |
-|  ran_count_reg_rep[7]_i_3_n_0 | asteroids_reg[3][is_activated]__0 | asteroids[3][x][9]_i_1_n_0 |                3 |              4 |
-|  ran_count_reg_rep[7]_i_3_n_0 | asteroids_reg[4][is_activated]__0 | asteroids[4][x][9]_i_1_n_0 |                3 |              4 |
-|  ran_count_reg_rep[7]_i_3_n_0 | asteroids_reg[0][is_activated]__0 | asteroids[0][y][9]_i_1_n_0 |                3 |              4 |
-|  ran_count_reg_rep[7]_i_3_n_0 | asteroids[1][x][10]_i_2_n_0       | asteroids[1][x]0_in[10]    |                2 |              7 |
-|  ran_count_reg_rep[7]_i_3_n_0 | asteroids[0][x][10]_i_2_n_0       | asteroids[0][x]0_in[10]    |                2 |              7 |
-|  ran_count_reg_rep[7]_i_3_n_0 | asteroids[2][x][10]_i_2_n_0       | asteroids[2][x]0_in[10]    |                3 |              7 |
-|  ran_count_reg_rep[7]_i_3_n_0 | asteroids[3][x][10]_i_2_n_0       | asteroids[3][x]0_in[10]    |                3 |              7 |
-|  ran_count_reg_rep[7]_i_3_n_0 | asteroids[4][x][10]_i_2_n_0       | asteroids[4][x]0_in[10]    |                1 |              7 |
-|  ran_count_reg_rep[7]_i_3_n_0 | asteroids[0][y][9]_i_1_n_0        |                            |                4 |             10 |
-|  ran_count_reg_rep[7]_i_3_n_0 | asteroids[1][y][9]_i_1_n_0        |                            |                4 |             10 |
-|  ran_count_reg_rep[7]_i_3_n_0 | asteroids[2][y][9]_i_1_n_0        |                            |                4 |             10 |
-|  ran_count_reg_rep[7]_i_3_n_0 | asteroids[3][y][9]_i_1_n_0        |                            |                3 |             10 |
-|  ran_count_reg_rep[7]_i_3_n_0 | asteroids[4][y][9]_i_1_n_0        |                            |                5 |             10 |
-|  ran_count_reg_rep[7]_i_3_n_0 |                                   |                            |               11 |             12 |
-|  ran_count_reg_rep[7]_i_3_n_0 | ran_count_rep[7]_i_1_n_0          |                            |                5 |             16 |
-|  clk_IBUF_BUFG                |                                   | u_clk60hz/pulse            |                8 |             31 |
-|  clk_IBUF_BUFG                |                                   | u_clk50mhz/pulse_0         |                9 |             32 |
-|  pulse_BUFG                   |                                   | hcount[31]_i_1_n_0         |                9 |             32 |
-|  pulse_BUFG                   | vcount                            | vcount[31]_i_1_n_0         |                9 |             32 |
-|  ran_count_reg_rep[7]_i_3_n_0 | sel                               | clear                      |                8 |             32 |
-|  ran_count_reg_rep[7]_i_3_n_0 | y2[0]_i_2_n_0                     | y2[0]_i_1_n_0              |                8 |             32 |
-+-------------------------------+-----------------------------------+----------------------------+------------------+----------------+
++-----------------------------------------+-----------------------------------+-----------------------------+------------------+----------------+
+|               Clock Signal              |           Enable Signal           |       Set/Reset Signal      | Slice Load Count | Bel Load Count |
++-----------------------------------------+-----------------------------------+-----------------------------+------------------+----------------+
+|  pulse_BUFG                             |                                   |                             |                1 |              1 |
+|  asteroids_reg[1][is_activated]_i_3_n_0 | asteroids_reg[2][is_activated]__0 | asteroids[2][y]             |                3 |              4 |
+|  asteroids_reg[1][is_activated]_i_3_n_0 | asteroids_reg[3][is_activated]__0 | asteroids[3][y]             |                3 |              4 |
+|  asteroids_reg[1][is_activated]_i_3_n_0 | asteroids_reg[0][is_activated]__0 | asteroids[0][y]             |                3 |              4 |
+|  asteroids_reg[1][is_activated]_i_3_n_0 | asteroids_reg[1][is_activated]__0 | asteroids[1][y]             |                3 |              4 |
+|  asteroids_reg[1][is_activated]_i_3_n_0 | asteroids_reg[4][is_activated]__0 | asteroids[4][y]             |                3 |              4 |
+|  clk_IBUF_BUFG                          |                                   |                             |                4 |              5 |
+|  asteroids_reg[1][is_activated]_i_3_n_0 |                                   |                             |                7 |              7 |
+|  asteroids_reg[1][is_activated]_i_3_n_0 | asteroids[4][x][10]_i_2_n_0       | asteroids[4][x]0_in[10]     |                2 |              7 |
+|  asteroids_reg[1][is_activated]_i_3_n_0 | asteroids[3][x][10]_i_2_n_0       | asteroids[3][x]0_in[10]     |                2 |              7 |
+|  asteroids_reg[1][is_activated]_i_3_n_0 | asteroids[0][x][10]_i_2_n_0       | asteroids[0][x]0_in[10]     |                3 |              7 |
+|  asteroids_reg[1][is_activated]_i_3_n_0 | asteroids[1][x][10]_i_2_n_0       | asteroids[1][x]0_in[10]     |                2 |              7 |
+|  asteroids_reg[1][is_activated]_i_3_n_0 | asteroids[2][x][10]_i_2_n_0       | asteroids[2][x]0_in[10]     |                2 |              7 |
+|  asteroids_reg[1][is_activated]_i_3_n_0 | asteroids[3][y]                   |                             |                5 |             11 |
+|  asteroids_reg[1][is_activated]_i_3_n_0 | asteroids[4][y]                   |                             |                5 |             11 |
+|  asteroids_reg[1][is_activated]_i_3_n_0 | asteroids[2][y]                   |                             |                8 |             11 |
+|  asteroids_reg[1][is_activated]_i_3_n_0 | asteroids[0][y]                   |                             |                5 |             11 |
+|  asteroids_reg[1][is_activated]_i_3_n_0 | asteroids[1][y]                   |                             |                6 |             11 |
+|  asteroids_reg[1][is_activated]_i_3_n_0 | ran_count_rep[7]_i_1_n_0          |                             |                5 |             16 |
+|  clk_IBUF_BUFG                          |                                   | u_clk60hz/pulse             |                8 |             31 |
+|  clk_IBUF_BUFG                          |                                   | ssd_ctrler/u_clk100hz/pulse |                8 |             31 |
+|  pulse_BUFG                             |                                   | vcount                      |                8 |             31 |
+|  asteroids_reg[1][is_activated]_i_3_n_0 | score_1[0]_i_1_n_0                |                             |                8 |             32 |
+|  asteroids_reg[1][is_activated]_i_3_n_0 | score_2[0]_i_1_n_0                |                             |                8 |             32 |
+|  asteroids_reg[1][is_activated]_i_3_n_0 | sel__0                            | clear                       |                8 |             32 |
+|  asteroids_reg[1][is_activated]_i_3_n_0 | y2[0]_i_2_n_0                     | y2[0]_i_1_n_0               |                8 |             32 |
+|  clk_IBUF_BUFG                          |                                   | u_clk50mhz/pulse_0          |                9 |             32 |
+|  pulse_BUFG                             | vcount                            | vcount[31]_i_1_n_0          |                9 |             32 |
++-----------------------------------------+-----------------------------------+-----------------------------+------------------+----------------+
 
 
 +--------+-----------------------+
 | Fanout | Number of ControlSets |
 +--------+-----------------------+
-| 3      |                     1 |
+| 1      |                     1 |
 | 4      |                     5 |
-| 7      |                     5 |
-| 10     |                     5 |
-| 12     |                     1 |
-| 16+    |                     7 |
+| 5      |                     1 |
+| 7      |                     6 |
+| 11     |                     5 |
+| 16+    |                    10 |
 +--------+-----------------------+
 
 

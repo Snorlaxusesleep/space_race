@@ -37,5 +37,21 @@ set_property src_info {type:XDC file:1 line:18 export:INPUT save:INPUT read:READ
 set_property PACKAGE_PIN Y19 [get_ports {vsync}];
 set_property src_info {type:XDC file:1 line:19 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN Y9 [get_ports clk];
+set_property src_info {type:XDC file:1 line:20 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN Y11 [get_ports {ssd[6]}];
+set_property src_info {type:XDC file:1 line:21 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN AA11 [get_ports {ssd[5]}];
+set_property src_info {type:XDC file:1 line:22 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN Y10 [get_ports {ssd[4]}];
+set_property src_info {type:XDC file:1 line:23 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN AA9 [get_ports {ssd[3]}];
+set_property src_info {type:XDC file:1 line:24 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN W12 [get_ports {ssd[2]}];
 set_property src_info {type:XDC file:1 line:25 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN W11 [get_ports {ssd[1]}];
+set_property src_info {type:XDC file:1 line:26 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN V10 [get_ports {ssd[0]}];
+set_property src_info {type:XDC file:1 line:27 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN W8 [get_ports {sel}];
+set_property src_info {type:XDC file:1 line:35 export:INPUT save:INPUT read:READ} [current_design]
 set_property IOSTANDARD LVCMOS33 [get_ports -of_objects [get_iobanks 33]];

@@ -32,12 +32,14 @@ architecture Behavioral of lab05 is
     constant asteroid_size : integer := 5;
     constant num_obstacles : integer := 5;
     signal hcount, vcount : integer;
-    signal data_in : STD_LOGIC_VECTOR(7 downto 0);
+    signal data_in1 : integer;
+    signal data_in2 : integer;
     --create component of ssd
     component ssd_ctrl is
         port(
             clk: in STD_LOGIC;
-            data_in:in STD_LOGIC_VECTOR (7 downto 0);
+            data_in1:in integer;
+            data_in2:in integer;
             sel: buffer STD_LOGIC := '0';
             ssd: out STD_LOGIC_VECTOR (6 downto 0)
         );
@@ -91,7 +93,7 @@ architecture Behavioral of lab05 is
 
 begin
     -- Port map the ssd_ctrl
-    name : ssd_ctrl port map (clk, data_in, sel, ssd);
+    ssd_ctrler : ssd_ctrl port map (clk, data_in1, data_in2, sel, ssd);
     u_clk1hz : clock_divider generic map(N => 50000000) port map(clk, clk_1Hz);
     u_clk10hz : clock_divider generic map(N => 5000000) port map(clk, clk_10Hz);
     u_clk60hz : clock_divider generic map(N => 833333) port map(clk, clk_60Hz);
@@ -174,7 +176,7 @@ begin
                 if (BTNU = '1') then
                     if ( y1 <= V_START) then
                         y1 <= V_END - Y_SIZE;
-                        score_1 <= 
+                        score_1 <= score_1+1;
                     else
                         y1 <= y1 - dy;
                     end if;
@@ -193,6 +195,7 @@ begin
                 if (BTNR = '1') then
                     if ( y2 <= V_START) then
                         y2 <= V_END - Y_SIZE;
+                        score_2 <= score_2+1;
                     else
                         y2 <= y2 - dy;
                     end if;
@@ -284,6 +287,13 @@ begin
     --         end if;
     --     end loop;
     -- end process;
+    
+    --transfer score to pmod ssd
+    process (score_1, score_2)
+    begin
+        data_in1 <= score_1;
+        data_in2 <= score_2;
+    end process;
 
     process (hcount, vcount, x1, y1, x2, y2, asteroids)
     begin
