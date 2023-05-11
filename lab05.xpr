@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="17" Path="C:/Users/user/Documents/.git/space_race/lab05.xpr">
+<Project Version="7" Minor="17" Path="C:/Users/ediso/Desktop/spacerace/lab05.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="87aeb4262b3e47b094f977c46a1c110f"/>

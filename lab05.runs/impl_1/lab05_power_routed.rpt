@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
-| Date             : Thu May 11 05:52:12 2023
-| Host             : DESKTOP-TE2J1PM running 64-bit major release  (build 9200)
+| Date             : Thu May 11 16:47:02 2023
+| Host             : DESKTOP-3VPPBLD running 64-bit major release  (build 9200)
 | Command          : report_power -file lab05_power_routed.rpt -pb lab05_power_summary_routed.pb -rpx lab05_power_routed.rpx
 | Design           : lab05
 | Device           : xc7z020clg484-1
@@ -50,13 +50,14 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |     1789 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      879 |     53200 |            1.65 |
-|   CARRY4       |    <0.001 |      234 |     13300 |            1.76 |
-|   Register     |    <0.001 |      254 |    106400 |            0.24 |
+| Slice Logic    |     0.001 |     2144 |       --- |             --- |
+|   LUT as Logic |    <0.001 |     1056 |     53200 |            1.98 |
+|   CARRY4       |    <0.001 |      273 |     13300 |            2.05 |
+|   Register     |    <0.001 |      325 |    106400 |            0.31 |
 |   Others       |     0.000 |        6 |       --- |             --- |
 |   BUFG         |     0.000 |        2 |        32 |            6.25 |
-| Signals        |    <0.001 |      659 |       --- |             --- |
+|   F7/F8 Muxes  |     0.000 |       30 |     53200 |            0.06 |
+| Signals        |    <0.001 |      819 |       --- |             --- |
 | I/O            |    <0.001 |       19 |       200 |            9.50 |
 | Static Power   |     0.124 |          |           |                 |
 | Total          |     0.127 |          |           |                 |
@@ -69,7 +70,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.010 |       0.003 |      0.007 |
+| Vccint    |       1.000 |     0.011 |       0.003 |      0.007 |
 | Vccaux    |       1.800 |     0.019 |       0.000 |      0.019 |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.001 |       0.000 |      0.001 |
