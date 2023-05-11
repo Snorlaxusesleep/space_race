@@ -19,7 +19,7 @@ set_property ip_output_repo c:/Users/ediso/Documents/GitHub/space_race/lab05.cac
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
   C:/Users/ediso/Documents/GitHub/space_race/lab05.srcs/sources_1/new/clock_divider.vhd
-  C:/Users/ediso/Desktop/ssd_ctrl.vhd
+  C:/Users/ediso/Documents/GitHub/space_race/lab05.srcs/sources_1/new/ssd_ctrl.vhd
   C:/Users/ediso/Documents/GitHub/space_race/lab05.srcs/sources_1/new/lab05.vhd
 }
 foreach dcp [get_files -quiet -all *.dcp] {

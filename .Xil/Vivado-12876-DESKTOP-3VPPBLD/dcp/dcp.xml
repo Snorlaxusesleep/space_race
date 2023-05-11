@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<Checkpoint Version="5" Minor="0">
+	<BUILD_NUMBER Name="1682563"/>
+	<FULL_BUILD Name="SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016"/>
+	<PRODUCT Name="Vivado v2016.3 (64-bit)"/>
+	<Part Name="xc7z020clg484-1"/>
+	<BoardPart Name="em.avnet.com:zed:part0:1.3"/>
+	<Top Name="lab05"/>
+	<DisableAutoIOBuffers Name="0"/>
+	<OutOfContext Name="0"/>
+	<HDPlatform Name="0"/>
+	<File Type="XDC" Name="lab05.xdc" ModTime="1683815586"/>
+	<File Type="SHAPE" Name="lab05.shape" ModTime="1683815586"/>
+	<File Type="EDIF" Name="lab05.edf" ModTime="1683815587"/>
+	<File Type="VERILOG_STUB" Name="lab05_stub.v" ModTime="1683815587"/>
+	<File Type="VHDL_STUB" Name="lab05_stub.vhdl" ModTime="1683815587"/>
+	<File Type="XDEF" Name="lab05.xdef" ModTime="1683815587"/>
+	<File Type="XN" Name="lab05.xn" ModTime="1683815587"/>
+	<File Type="INCR" Name="lab05.incr" ModTime="1683815587"/>
+	<File Type="RDA" Name="lab05.rda" ModTime="1683815587"/>
+	<File Type="REPLAY" Name="lab05_iPhysOpt.tcl" ModTime="1683815587"/>
+	<File Type="WDF" Name="lab05.wdf" ModTime="1683815587"/>
+</Checkpoint>
+
