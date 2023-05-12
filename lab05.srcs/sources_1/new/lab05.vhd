@@ -125,10 +125,28 @@ architecture Behavioral of lab05 is
     signal random : rand;
     signal ran_count : integer := 0;
 
+    --create component of joystick
+    component pmod_joystick
+        generic(
+            clk_freq        : INTEGER ); --system clock frequency in MHz
+        port(
+            clk             : IN     STD_LOGIC;                     --system clock
+            reset_n         : IN     STD_LOGIC;                     --active low reset
+            miso            : IN     STD_LOGIC;                     --SPI master in, slave out
+            mosi            : OUT    STD_LOGIC;                     --SPI master out, slave in
+            sclk            : BUFFER STD_LOGIC;                     --SPI clock
+            cs_n            : OUT    STD_LOGIC;                     --pmod chip select
+            x_position      : OUT    STD_LOGIC_VECTOR(7 DOWNTO 0);  --joystick x-axis position
+            y_position      : OUT    STD_LOGIC_VECTOR(7 DOWNTO 0);  --joystick y-axis position
+            trigger_button  : OUT    STD_LOGIC;                     --trigger button status
+            center_button   : OUT    STD_LOGIC);                    --center button status
+    end component;
+    signal reset_n, miso, mosi, sclk, cs_n, x_position, y_position, trigger_button, center_button : std_logic;                  
+
 
 begin
-    -- Port map the ssd_ctrl
-    ssd_ctrler : ssd_ctrl port map (clk, data_in1, data_in2, sel, ssd);
+    joystick : pmod_joystick generic map (clk_freq => 50) port map(clk, reset_n, miso, mosi, sclk, cs_n, x_position, y_position, trigger_button, center_button)
+    ssd_ctrler : ssd_ctrl port map (clk, data_in1, data_in2, sel, ssd);           -- Port map the ssd_ctrl
     u_clk1hz : clock_divider generic map(N => 50000000) port map(clk, clk_1Hz);
     u_clk10hz : clock_divider generic map(N => 5000000) port map(clk, clk_10Hz);
     u_clk60hz : clock_divider generic map(N => 833333) port map(clk, clk_60Hz);
