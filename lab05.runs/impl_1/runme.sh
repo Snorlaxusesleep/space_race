@@ -11,9 +11,9 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
-  PATH=C:/SDK/2016.3/bin;C:/Vivado/2016.3/ids_lite/ISE/bin/nt64;C:/Vivado/2016.3/ids_lite/ISE/lib/nt64:C:/Vivado/2016.3/bin
+  PATH=C:/Xilinx/SDK/2016.3/bin;C:/Xilinx/Vivado/2016.3/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2016.3/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2016.3/bin
 else
-  PATH=C:/SDK/2016.3/bin;C:/Vivado/2016.3/ids_lite/ISE/bin/nt64;C:/Vivado/2016.3/ids_lite/ISE/lib/nt64:C:/Vivado/2016.3/bin:$PATH
+  PATH=C:/Xilinx/SDK/2016.3/bin;C:/Xilinx/Vivado/2016.3/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2016.3/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2016.3/bin:$PATH
 fi
 export PATH
 
@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/ediso/Documents/GitHub/space_race/lab05.runs/impl_1'
+HD_PWD='C:/Users/user/Documents/.git/space_race/lab05.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

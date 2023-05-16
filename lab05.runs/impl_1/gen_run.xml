@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1683815442">
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1684240576">
   <File Type="PWROPT-DRC" Name="lab05_drc_pwropted.rpt"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="lab05_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="lab05_timing_summary_init.rpt"/>
@@ -68,7 +68,19 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PPRDIR/../../../Downloads/spi_master.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/ssd_ctrl.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../Downloads/pmod_joystick.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>

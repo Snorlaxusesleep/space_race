@@ -25,16 +25,25 @@ set_property PACKAGE_PIN W12 [get_ports {ssd[2]}];
 set_property PACKAGE_PIN W11 [get_ports {ssd[1]}];
 set_property PACKAGE_PIN V10 [get_ports {ssd[0]}];
 set_property PACKAGE_PIN W8 [get_ports {sel}];
-
+set_property PACKAGE_PIN P16 [get_ports {reset}]; # "BTNC"
+set_property PACKAGE_PIN AB6 [get_ports {mosi}];
+set_property PACKAGE_PIN AB7 [get_ports {cs}];
+set_property PACKAGE_PIN AA4 [get_ports {sclk}];
+set_property PACKAGE_PIN Y4 [get_ports {miso}];
 
 
 set_property IOSTANDARD LVCMOS25 [get_ports BTNU]; # "BTNU"
 set_property IOSTANDARD LVCMOS25 [get_ports BTND]; # "BTND"
 set_property IOSTANDARD LVCMOS25 [get_ports BTNL]; # "BTNL"
 set_property IOSTANDARD LVCMOS25 [get_ports BTNR]; # "BTNR"
+set_property IOSTANDARD LVCMOS25 [get_ports reset]; # "BTNC"
 set_property IOSTANDARD LVCMOS33 [get_ports -of_objects [get_iobanks 33]];
 set_property IOSTANDARD LVCMOS33 [get_ports clk];
 set_property IOSTANDARD LVCMOS33 [get_ports ssd];
 set_property IOSTANDARD LVCMOS33 [get_ports sel];
+set_property IOSTANDARD LVCMOS33 [get_ports mosi ];
+set_property IOSTANDARD LVCMOS33 [get_ports cs];
+set_property IOSTANDARD LVCMOS33 [get_ports sclk];
+set_property IOSTANDARD LVCMOS33 [get_ports miso];
 
 create_clock -period 10 [get_ports clk];

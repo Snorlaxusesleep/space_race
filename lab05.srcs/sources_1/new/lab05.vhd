@@ -9,7 +9,13 @@ entity lab05 is
         red, green, blue : out std_logic_vector(3 downto 0);
         BTNU, BTND, BTNR, BTNL : IN STD_LOGIC;
         ssd : out STD_LOGIC_VECTOR(6 downto 0);
-        sel : buffer STD_LOGIC
+        sel : buffer STD_LOGIC;
+        
+        reset         : IN     STD_LOGIC;                     --active low reset
+        miso            : IN     STD_LOGIC;                     --SPI master in, slave out
+        mosi            : OUT    STD_LOGIC;                     --SPI master out, slave in
+        sclk            : BUFFER STD_LOGIC;                     --SPI clock
+        cs            : OUT    STD_LOGIC                     --pmod chip select
     );        
 end lab05;
 
@@ -50,6 +56,23 @@ architecture Behavioral of lab05 is
         port( clk : in std_logic;
         clk_out : out std_logic );
     end component;
+    
+    component pmod_joystick is
+        GENERIC(
+            clk_freq        : INTEGER); --system clock frequency in MHz
+          PORT(
+            clk             : IN     STD_LOGIC;                     --system clock
+            reset_n         : IN     STD_LOGIC;                     --active low reset
+            miso            : IN     STD_LOGIC;                     --SPI master in, slave out
+            mosi            : OUT    STD_LOGIC;                     --SPI master out, slave in
+            sclk            : BUFFER STD_LOGIC;                     --SPI clock
+            cs_n            : OUT    STD_LOGIC;                     --pmod chip select
+            x_position      : OUT    STD_LOGIC_VECTOR(7 DOWNTO 0);  --joystick x-axis position
+            y_position      : OUT    STD_LOGIC_VECTOR(7 DOWNTO 0);  --joystick y-axis position
+            trigger_button  : OUT    STD_LOGIC;                     --trigger button status
+            center_button   : OUT    STD_LOGIC);                    --center button status
+        end component;
+    
     signal clk_1Hz, clk_10Hz, clk_50MHz, clk_60Hz : std_logic;
     
     constant X_STEP : integer := 3;
@@ -116,19 +139,27 @@ architecture Behavioral of lab05 is
         (x => H_START+925, y => V_START+Y_SIZE+203, dir => Left, is_activated => true),
         (x => H_START+975, y => V_START+Y_SIZE+442, dir => Left, is_activated => true)
     );
-    
+
     type colors is (C_Black, C_Green, C_Blue, C_Red, C_White, C_Yellow);
     signal color : colors := C_White;
-    signal color_count : integer := 0;
+    type T_2D is array (0 to 39, 0 to 29) of colors;
+    constant bird : T_2D := (
+    
+    
+    );
     signal i : integer := 0;
     type rand is array (0 to 600) of integer;   
-    signal random : rand;
-    signal ran_count : integer := 0;
-
+    signal random : rand;    
+    
+    signal x_position      :     STD_LOGIC_VECTOR(7 DOWNTO 0);  --joystick x-axis position
+    signal y_position      :     STD_LOGIC_VECTOR(7 DOWNTO 0);  --joystick y-axis position
+    signal trigger_button  :     STD_LOGIC;                     --trigger button status
+    signal center_button   :     STD_LOGIC;                    --center button status
 
 begin
     -- Port map the ssd_ctrl
     ssd_ctrler : ssd_ctrl port map (clk, data_in1, data_in2, sel, ssd);
+    jstk_ctrler : pmod_joystick generic map(clk_freq => 100) port map(clk, reset, miso, mosi, sclk, cs, x_position, y_position, trigger_button, center_button);
     u_clk1hz : clock_divider generic map(N => 50000000) port map(clk, clk_1Hz);
     u_clk10hz : clock_divider generic map(N => 5000000) port map(clk, clk_10Hz);
     u_clk60hz : clock_divider generic map(N => 833333) port map(clk, clk_60Hz);
@@ -195,7 +226,6 @@ begin
     begin
         if (rising_edge(clk_60Hz)) then
             for i in 0 to num_obstacles-1 loop
-
                 if (asteroids(i).x <= x1+X_SIZE) and (asteroids(i).x >= x1) and (asteroids(i).y >= y1) and (asteroids(i).y <= y1+ Y_SIZE) then
                     collided_1 <= true;
                 end if;
@@ -208,7 +238,7 @@ begin
                 y1 <= V_END - Y_SIZE;
                 collided_1 <=false;
             else
-                if (BTNU = '1') then
+                if ((BTNU = '1') or (center_button = '1')) then
                     if ( y1 <= V_START) then
                         y1 <= V_END - Y_SIZE;
                         score_1 <= score_1+1;
@@ -304,6 +334,7 @@ begin
                     color <= C_White;
                 end if;
             end loop;
+            
             -- a center line
             if (hcount >= 795 and hcount < 805) then
                 color <= C_White;

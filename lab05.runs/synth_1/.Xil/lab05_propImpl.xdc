@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/ediso/Documents/GitHub/space_race/lab05.srcs/constrs_1/new/lab05.xdc rfile:../../../lab05.srcs/constrs_1/new/lab05.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/user/Documents/.git/space_race/lab05.srcs/constrs_1/new/lab05.xdc rfile:../../../lab05.srcs/constrs_1/new/lab05.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN T18 [get_ports {BTNU}]; # "BTNU"
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
@@ -53,5 +53,15 @@ set_property src_info {type:XDC file:1 line:26 export:INPUT save:INPUT read:READ
 set_property PACKAGE_PIN V10 [get_ports {ssd[0]}];
 set_property src_info {type:XDC file:1 line:27 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN W8 [get_ports {sel}];
-set_property src_info {type:XDC file:1 line:35 export:INPUT save:INPUT read:READ} [current_design]
+set_property src_info {type:XDC file:1 line:28 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN P16 [get_ports {reset}]; # "BTNC"
+set_property src_info {type:XDC file:1 line:29 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN AB6 [get_ports {mosi}];
+set_property src_info {type:XDC file:1 line:30 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN AB7 [get_ports {cs}];
+set_property src_info {type:XDC file:1 line:31 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN AA4 [get_ports {sclk}];
+set_property src_info {type:XDC file:1 line:32 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN Y4 [get_ports {miso}];
+set_property src_info {type:XDC file:1 line:40 export:INPUT save:INPUT read:READ} [current_design]
 set_property IOSTANDARD LVCMOS33 [get_ports -of_objects [get_iobanks 33]];
