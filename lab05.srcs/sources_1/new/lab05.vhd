@@ -143,10 +143,10 @@ architecture Behavioral of lab05 is
     type colors is (C_Black, C_Green, C_Blue, C_Red, C_White, C_Yellow);
     signal color : colors := C_White;
     type T_2D is array (0 to 39, 0 to 29) of colors;
-    constant bird : T_2D := (
+--    constant bird : T_2D := (
     
     
-    );
+--    );
     signal i : integer := 0;
     type rand is array (0 to 600) of integer;   
     signal random : rand;    
