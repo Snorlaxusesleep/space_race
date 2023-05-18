@@ -1,74 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1684385190">
-  <File Type="PWROPT-DRC" Name="lab05_drc_pwropted.rpt"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="lab05_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="lab05_timing_summary_init.rpt"/>
-  <File Type="ROUTE-PWR-RPX" Name="lab05_power_routed.rpx"/>
-  <File Type="PA-TCL" Name="lab05.tcl"/>
-  <File Type="OPT-HWDEF" Name="lab05.hwdef"/>
-  <File Type="RDI-RDI" Name="lab05.vdi"/>
-  <File Type="OPT-DCP" Name="lab05_opt.dcp"/>
-  <File Type="OPT-DRC" Name="lab05_drc_opted.rpt"/>
-  <File Type="OPT-TIMING" Name="lab05_timing_summary_opted.rpt"/>
-  <File Type="PWROPT-DCP" Name="lab05_pwropt.dcp"/>
-  <File Type="PWROPT-TIMING" Name="lab05_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="lab05_placed.dcp"/>
-  <File Type="PLACE-IO" Name="lab05_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="lab05_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="lab05_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="lab05_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="lab05_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="lab05_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="lab05_incremental_reuse_pre_placed.rpt"/>
-  <File Type="PLACE-TIMING" Name="lab05_timing_summary_placed.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="lab05_postplace_pwropt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="lab05_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="lab05_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="lab05_drc_physopted.rpt"/>
-  <File Type="PHYSOPT-TIMING" Name="lab05_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="lab05_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="lab05_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="lab05_routed_bb.dcp"/>
-  <File Type="ROUTE-DRC" Name="lab05_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="lab05_drc_routed.pb"/>
-  <File Type="BG-BIN" Name="lab05.bin"/>
-  <File Type="ROUTE-DRC-RPX" Name="lab05_drc_routed.rpx"/>
-  <File Type="BG-DRC" Name="lab05.drc"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="lab05_methodology_drc_routed.rpt"/>
-  <File Type="BITSTR-MSK" Name="lab05.msk"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="lab05_methodology_drc_routed.rpx"/>
-  <File Type="BG-BGN" Name="lab05.bgn"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="lab05_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-PWR" Name="lab05_power_routed.rpt"/>
-  <File Type="ROUTE-PWR-SUM" Name="lab05_power_summary_routed.pb"/>
-  <File Type="ROUTE-STATUS" Name="lab05_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="lab05_route_status.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="lab05_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="lab05_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="lab05_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="lab05_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="lab05_clock_utilization_routed.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="lab05_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="lab05_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="lab05_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="lab05_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="lab05_timing_summary_postroute_physopted.rpx"/>
-  <File Type="BG-BIT" Name="lab05.bit"/>
-  <File Type="BITSTR-RBT" Name="lab05.rbt"/>
-  <File Type="BITSTR-NKY" Name="lab05.nky"/>
-  <File Type="BITSTR-BMM" Name="lab05_bd.bmm"/>
-  <File Type="BITSTR-MMI" Name="lab05.mmi"/>
-  <File Type="BITSTR-SYSDEF" Name="lab05.sysdef"/>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1684428212">
+  <File Type="PWROPT-DRC" Name="CENG3430_drc_pwropted.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="CENG3430_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="CENG3430_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="CENG3430_power_routed.rpx"/>
+  <File Type="PA-TCL" Name="CENG3430.tcl"/>
+  <File Type="OPT-HWDEF" Name="CENG3430.hwdef"/>
+  <File Type="RDI-RDI" Name="CENG3430.vdi"/>
+  <File Type="OPT-DCP" Name="CENG3430_opt.dcp"/>
+  <File Type="OPT-DRC" Name="CENG3430_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="CENG3430_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="CENG3430_pwropt.dcp"/>
+  <File Type="PWROPT-TIMING" Name="CENG3430_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="CENG3430_placed.dcp"/>
+  <File Type="PLACE-IO" Name="CENG3430_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="CENG3430_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="CENG3430_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="CENG3430_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="CENG3430_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="CENG3430_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="CENG3430_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="CENG3430_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="CENG3430_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="CENG3430_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="CENG3430_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="CENG3430_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="CENG3430_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="CENG3430_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="CENG3430_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="CENG3430_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="CENG3430_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="CENG3430_drc_routed.pb"/>
+  <File Type="BG-BIN" Name="CENG3430.bin"/>
+  <File Type="ROUTE-DRC-RPX" Name="CENG3430_drc_routed.rpx"/>
+  <File Type="BG-DRC" Name="CENG3430.drc"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="CENG3430_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MSK" Name="CENG3430.msk"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="CENG3430_methodology_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="CENG3430.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="CENG3430_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="CENG3430_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="CENG3430_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="CENG3430_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="CENG3430_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="CENG3430_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="CENG3430_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="CENG3430_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="CENG3430_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="CENG3430_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="CENG3430_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="CENG3430_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="CENG3430_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="CENG3430_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="CENG3430_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="CENG3430.bit"/>
+  <File Type="BITSTR-RBT" Name="CENG3430.rbt"/>
+  <File Type="BITSTR-NKY" Name="CENG3430.nky"/>
+  <File Type="BITSTR-BMM" Name="CENG3430_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="CENG3430.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="CENG3430.sysdef"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/new/clock_divider.vhd">
+    <File Path="$PPRDIR/../../../Downloads/spi_master.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../../Downloads/spi_master.vhd">
+    <File Path="$PSRCDIR/sources_1/new/clock_divider.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -81,6 +81,12 @@
       </FileInfo>
     </File>
     <File Path="$PPRDIR/../../../Downloads/pmod_joystick.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/RGB_driver.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -102,7 +108,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="lab05"/>
+      <Option Name="TopModule" Val="CENG3430"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>

@@ -5,14 +5,6 @@
     <Generation Name="SYNTHESIS" State="STALE" Timestamp="1683643657"/>
     <Generation Name="IMPLEMENTATION" State="STALE" Timestamp="1683643657"/>
     <Generation Name="SIMULATION" State="STALE" Timestamp="1683643657"/>
-    <FileCollection Name="SOURCES" Type="SOURCES">
-      <File Name="ip\design_1_ten_gig_eth_mac_0_0\design_1_ten_gig_eth_mac_0_0.xci" Type="IP">
-        <Properties IsEditable="false" IsVisible="false" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-    </FileCollection>
+    <FileCollection Name="SOURCES" Type="SOURCES"/>
   </CompositeFile>
 </Root>

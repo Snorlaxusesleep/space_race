@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1684385190">
-  <File Type="RDS-PROPCONSTRS" Name="lab05_drc_synth.rpt"/>
-  <File Type="PA-TCL" Name="lab05.tcl"/>
-  <File Type="RDS-RDS" Name="lab05.vds"/>
-  <File Type="RDS-UTIL" Name="lab05_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="lab05_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="lab05.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="lab05_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="lab05_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1684428212">
+  <File Type="RDS-PROPCONSTRS" Name="CENG3430_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="CENG3430.tcl"/>
+  <File Type="RDS-RDS" Name="CENG3430.vds"/>
+  <File Type="RDS-UTIL" Name="CENG3430_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="CENG3430_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="CENG3430.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="CENG3430_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="CENG3430_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/new/clock_divider.vhd">
+    <File Path="$PPRDIR/../../../Downloads/spi_master.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../../Downloads/spi_master.vhd">
+    <File Path="$PSRCDIR/sources_1/new/clock_divider.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -29,6 +29,12 @@
       </FileInfo>
     </File>
     <File Path="$PPRDIR/../../../Downloads/pmod_joystick.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/RGB_driver.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -50,7 +56,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="lab05"/>
+      <Option Name="TopModule" Val="CENG3430"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
