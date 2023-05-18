@@ -41,7 +41,7 @@ set_property IOSTANDARD LVCMOS33 [get_ports -of_objects [get_iobanks 33]];
 set_property IOSTANDARD LVCMOS33 [get_ports clk];
 set_property IOSTANDARD LVCMOS33 [get_ports ssd];
 set_property IOSTANDARD LVCMOS33 [get_ports sel];
-set_property IOSTANDARD LVCMOS33 [get_ports mosi ];
+set_property IOSTANDARD LVCMOS33 [get_ports mosi];
 set_property IOSTANDARD LVCMOS33 [get_ports cs];
 set_property IOSTANDARD LVCMOS33 [get_ports sclk];
 set_property IOSTANDARD LVCMOS33 [get_ports miso];

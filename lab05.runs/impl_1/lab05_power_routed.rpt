@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
-| Date             : Tue May 16 21:39:40 2023
+| Date             : Thu May 18 13:50:30 2023
 | Host             : DESKTOP-TE2J1PM running 64-bit major release  (build 9200)
 | Command          : report_power -file lab05_power_routed.rpt -pb lab05_power_summary_routed.pb -rpx lab05_power_routed.rpx
 | Design           : lab05
@@ -30,12 +30,12 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.152 |
-| Dynamic (W)              | 0.028 |
+| Total On-Chip Power (W)  | 0.149 |
+| Dynamic (W)              | 0.024 |
 | Device Static (W)        | 0.124 |
 | Effective TJA (C/W)      | 11.5  |
-| Max Ambient (C)          | 83.2  |
-| Junction Temperature (C) | 26.8  |
+| Max Ambient (C)          | 83.3  |
+| Junction Temperature (C) | 26.7  |
 | Confidence Level         | Low   |
 | Setting File             | ---   |
 | Simulation Activity File | ---   |
@@ -50,17 +50,17 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.002 |        3 |       --- |             --- |
-| Slice Logic    |     0.015 |    21480 |       --- |             --- |
-|   LUT as Logic |     0.014 |    12945 |     53200 |           24.33 |
-|   CARRY4       |    <0.001 |     1741 |     13300 |           13.09 |
-|   F7/F8 Muxes  |    <0.001 |     1280 |     53200 |            2.41 |
-|   Register     |    <0.001 |     1259 |    106400 |            1.18 |
-|   Others       |     0.000 |       12 |       --- |             --- |
+| Slice Logic    |     0.013 |    21679 |       --- |             --- |
+|   LUT as Logic |     0.012 |    13056 |     53200 |           24.54 |
+|   CARRY4       |    <0.001 |     1742 |     13300 |           13.10 |
+|   F7/F8 Muxes  |    <0.001 |     1300 |     53200 |            2.44 |
+|   Register     |    <0.001 |     1314 |    106400 |            1.23 |
+|   Others       |     0.000 |       13 |       --- |             --- |
 |   BUFG         |     0.000 |        2 |        32 |            6.25 |
-| Signals        |     0.010 |     8072 |       --- |             --- |
+| Signals        |     0.009 |     8264 |       --- |             --- |
 | I/O            |    <0.001 |       32 |       200 |           16.00 |
 | Static Power   |     0.124 |          |           |                 |
-| Total          |     0.152 |          |           |                 |
+| Total          |     0.149 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -70,7 +70,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.035 |       0.027 |      0.008 |
+| Vccint    |       1.000 |     0.032 |       0.024 |      0.008 |
 | Vccaux    |       1.800 |     0.019 |       0.000 |      0.019 |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.001 |       0.000 |      0.001 |
@@ -146,7 +146,7 @@ Table of Contents
 +------------------+-----------+
 | Name             | Power (W) |
 +------------------+-----------+
-| lab05            |     0.028 |
+| lab05            |     0.024 |
 |   jstk_ctrler    |     0.002 |
 |     spi_master_0 |    <0.001 |
 |   ssd_ctrler     |    <0.001 |
