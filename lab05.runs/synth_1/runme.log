@@ -14,9 +14,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 10744 
+INFO: Helper process launched with PID 16928 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 283.430 ; gain = 73.727
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 283.320 ; gain = 73.344
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-2040] formal port clk_out of mode out cannot be associated with actual port sel of mode buffer [C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/ssd_ctrl.vhd:51]
 INFO: [Synth 8-638] synthesizing module 'CENG3430' [C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/lab05.vhd:22]
@@ -31,17 +31,17 @@ WARNING: [Synth 8-614] signal 'data_in2' is read in the process but is not in th
 WARNING: [Synth 8-614] signal 'data_in1' is read in the process but is not in the sensitivity list [C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/ssd_ctrl.vhd:54]
 INFO: [Synth 8-256] done synthesizing module 'ssd_ctrl' (2#1) [C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/ssd_ctrl.vhd:15]
 	Parameter clk_freq bound to: 100 - type: integer 
-INFO: [Synth 8-3491] module 'pmod_joystick' declared at 'C:/Users/user/Downloads/pmod_joystick.vhd:26' bound to instance 'jstk_ctrler' of component 'pmod_joystick' [C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/lab05.vhd:266]
-INFO: [Synth 8-638] synthesizing module 'pmod_joystick' [C:/Users/user/Downloads/pmod_joystick.vhd:42]
+INFO: [Synth 8-3491] module 'pmod_joystick' declared at 'C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/pmod_joystick.vhd:26' bound to instance 'jstk_ctrler' of component 'pmod_joystick' [C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/lab05.vhd:266]
+INFO: [Synth 8-638] synthesizing module 'pmod_joystick' [C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/pmod_joystick.vhd:42]
 	Parameter clk_freq bound to: 100 - type: integer 
 	Parameter slaves bound to: 1 - type: integer 
 	Parameter d_width bound to: 8 - type: integer 
-INFO: [Synth 8-3491] module 'spi_master' declared at 'C:/Users/user/Downloads/spi_master.vhd:32' bound to instance 'spi_master_0' of component 'spi_master' [C:/Users/user/Downloads/pmod_joystick.vhd:76]
-INFO: [Synth 8-638] synthesizing module 'spi_master' [C:/Users/user/Downloads/spi_master.vhd:54]
+INFO: [Synth 8-3491] module 'spi_master' declared at 'C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/spi_master.vhd:32' bound to instance 'spi_master_0' of component 'spi_master' [C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/pmod_joystick.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'spi_master' [C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/spi_master.vhd:54]
 	Parameter slaves bound to: 1 - type: integer 
 	Parameter d_width bound to: 8 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'spi_master' (3#1) [C:/Users/user/Downloads/spi_master.vhd:54]
-INFO: [Synth 8-256] done synthesizing module 'pmod_joystick' (4#1) [C:/Users/user/Downloads/pmod_joystick.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'spi_master' (3#1) [C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/spi_master.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'pmod_joystick' (4#1) [C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/pmod_joystick.vhd:42]
 	Parameter N bound to: 50000000 - type: integer 
 INFO: [Synth 8-3491] module 'clock_divider' declared at 'C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/clock_divider.vhd:4' bound to instance 'u_clk1hz' of component 'clock_divider' [C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/lab05.vhd:267]
 INFO: [Synth 8-638] synthesizing module 'clock_divider__parameterized1' [C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/clock_divider.vhd:12]
@@ -65,8 +65,8 @@ INFO: [Synth 8-638] synthesizing module 'clock_divider__parameterized7' [C:/User
 	Parameter N bound to: 1 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'clock_divider__parameterized7' (4#1) [C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/clock_divider.vhd:12]
 INFO: [Synth 8-256] done synthesizing module 'RGB_driver' (5#1) [C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/RGB_driver.vhd:12]
-WARNING: [Synth 8-614] signal 'fuel' is read in the process but is not in the sensitivity list [C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/lab05.vhd:377]
-INFO: [Synth 8-226] default block is never used [C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/lab05.vhd:413]
+WARNING: [Synth 8-614] signal 'fuel' is read in the process but is not in the sensitivity list [C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/lab05.vhd:383]
+INFO: [Synth 8-226] default block is never used [C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/lab05.vhd:423]
 WARNING: [Synth 8-3848] Net random[520] in module/entity CENG3430 does not have driver. [C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/lab05.vhd:256]
 WARNING: [Synth 8-3848] Net random[521] in module/entity CENG3430 does not have driver. [C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/lab05.vhd:256]
 WARNING: [Synth 8-3848] Net random[522] in module/entity CENG3430 does not have driver. [C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/lab05.vhd:256]
@@ -150,7 +150,7 @@ WARNING: [Synth 8-3848] Net random[599] in module/entity CENG3430 does not have 
 WARNING: [Synth 8-3848] Net random[600] in module/entity CENG3430 does not have driver. [C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/lab05.vhd:256]
 INFO: [Synth 8-256] done synthesizing module 'CENG3430' (6#1) [C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/lab05.vhd:22]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 526.508 ; gain = 316.805
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 533.406 ; gain = 323.430
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -160,7 +160,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 526.508 ; gain = 316.805
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 533.406 ; gain = 323.430
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -177,29 +177,29 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 879.500 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 884.363 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 879.500 ; gain = 669.797
+Finished Constraint Validation : Time (s): cpu = 00:00:30 ; elapsed = 00:00:36 . Memory (MB): peak = 884.363 ; gain = 674.387
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 879.500 ; gain = 669.797
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:30 ; elapsed = 00:00:36 . Memory (MB): peak = 884.363 ; gain = 674.387
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 879.500 ; gain = 669.797
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:36 . Memory (MB): peak = 884.363 ; gain = 674.387
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "pulse" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "ssd" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/user/Downloads/spi_master.vhd:130]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/user/Downloads/spi_master.vhd:130]
-INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/user/Downloads/spi_master.vhd:130]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/spi_master.vhd:130]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/spi_master.vhd:130]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/spi_master.vhd:130]
 INFO: [Synth 8-5545] ROM "clk_ratio" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'pmod_joystick'
 INFO: [Synth 8-5544] ROM "spi_rx_data" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
@@ -219,8 +219,8 @@ INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32
 INFO: [Synth 8-5545] ROM "hcount" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "vcount" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "vcount" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/lab05.vhd:311]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/lab05.vhd:292]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/lab05.vhd:317]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/lab05.vhd:298]
 INFO: [Synth 8-5546] ROM "space_ship[0,0]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "space_ship[0,1]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "space_ship[0,2]" won't be mapped to RAM because it is too sparse
@@ -257,6 +257,34 @@ INFO: [Synth 8-5546] ROM "space_ship[0,19]" won't be mapped to RAM because it is
 INFO: [Synth 8-5546] ROM "space_ship[0,20]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "space_ship[0,21]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "space_ship[0,22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "game_over[0,168]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "game_over[0,162]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "game_over[0,160]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "game_over[0,147]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "game_over[0,138]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "game_over[0,136]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "game_over[0,108]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "game_over[0,98]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "game_over[0,71]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "game_over[0,67]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "game_over[0,66]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "game_over[0,61]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "game_over[0,60]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "game_over[0,59]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "game_over[0,58]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "game_over[0,44]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "game_over[0,43]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "game_over[0,42]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "game_over[0,41]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "game_over[0,32]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "game_over[0,21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "game_over[0,12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "game_over[0,11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "game_over[0,10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "game_over[0,9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "game_over[0,8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "game_over[0,7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "game_over[0,0]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "asteroids[20][x]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "asteroids[20][x]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "asteroids[21][x]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
@@ -308,7 +336,7 @@ INFO: [Synth 8-5544] ROM "asteroids[39][x]" won't be mapped to Block RAM because
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'pmod_joystick'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 879.500 ; gain = 669.797
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:42 ; elapsed = 00:00:49 . Memory (MB): peak = 884.363 ; gain = 674.387
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -332,12 +360,12 @@ Report RTL Partitions:
 |15    |CENG3430__GB14 |           1|     18768|
 |16    |CENG3430__GB15 |           1|     18768|
 |17    |CENG3430__GB16 |           1|     18768|
-|18    |CENG3430__GB17 |           1|     24044|
-|19    |CENG3430__GB18 |           1|      8490|
-|20    |CENG3430__GB19 |           1|     18933|
-|21    |CENG3430__GB20 |           1|     16950|
-|22    |CENG3430__GB21 |           1|     17995|
-|23    |CENG3430__GB22 |           1|     18768|
+|18    |CENG3430__GB17 |           1|     21474|
+|19    |CENG3430__GB18 |           1|      5396|
+|20    |CENG3430__GB19 |           1|      7368|
+|21    |CENG3430__GB20 |           1|      9819|
+|22    |CENG3430__GB21 |           1|     15124|
+|23    |CENG3430__GB22 |           1|     28515|
 |24    |CENG3430__GB23 |           1|     18768|
 |25    |CENG3430__GB24 |           1|     18768|
 |26    |CENG3430__GB25 |           1|     18768|
@@ -351,8 +379,8 @@ Report RTL Partitions:
 |34    |CENG3430__GB33 |           1|     18768|
 |35    |CENG3430__GB34 |           1|     18768|
 |36    |CENG3430__GB35 |           1|     18768|
-|37    |CENG3430__GB36 |           1|     23602|
-|38    |CENG3430__GB37 |           1|     18768|
+|37    |CENG3430__GB36 |           1|     18768|
+|38    |CENG3430__GB37 |           1|     23602|
 |39    |CENG3430__GB38 |           1|     18768|
 |40    |CENG3430__GB39 |           1|     18768|
 |41    |CENG3430__GB40 |           1|     18768|
@@ -360,6 +388,7 @@ Report RTL Partitions:
 |43    |CENG3430__GB42 |           1|     18768|
 |44    |CENG3430__GB43 |           1|     18768|
 |45    |CENG3430__GB44 |           1|     18768|
+|46    |CENG3430__GB45 |           1|     18768|
 +------+---------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -370,8 +399,9 @@ Detailed RTL Component Info :
 	   2 Input     32 Bit       Adders := 52    
 	   2 Input     24 Bit       Adders := 1     
 	   2 Input     11 Bit       Adders := 40    
-	   2 Input      6 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
 	   3 Input      6 Bit       Adders := 3     
+	   2 Input      6 Bit       Adders := 3     
 	   2 Input      5 Bit       Adders := 4     
 	   2 Input      3 Bit       Adders := 1     
 +---Registers : 
@@ -401,8 +431,9 @@ Detailed RTL Component Info :
 	   6 Input      3 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 87    
-	  40 Input      1 Bit        Muxes := 2     
 	  60 Input      1 Bit        Muxes := 36    
+	  40 Input      1 Bit        Muxes := 2     
+	  33 Input      1 Bit        Muxes := 28    
 	   5 Input      1 Bit        Muxes := 8     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -417,8 +448,9 @@ Detailed RTL Component Info :
 	   3 Input     33 Bit       Adders := 40    
 	   2 Input     32 Bit       Adders := 44    
 	   2 Input     11 Bit       Adders := 40    
-	   2 Input      6 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
 	   3 Input      6 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 3     
 +---Registers : 
 	               11 Bit    Registers := 40    
 	               10 Bit    Registers := 40    
@@ -429,8 +461,24 @@ Detailed RTL Component Info :
 	   3 Input     11 Bit        Muxes := 20    
 	   3 Input     10 Bit        Muxes := 20    
 	   2 Input      1 Bit        Muxes := 52    
-	  40 Input      1 Bit        Muxes := 2     
 	  60 Input      1 Bit        Muxes := 36    
+	  40 Input      1 Bit        Muxes := 2     
+	  33 Input      1 Bit        Muxes := 28    
+Module clock_divider 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module ssd_ctrl 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
 Module clock_divider__parameterized7 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -460,21 +508,6 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 1     
-Module clock_divider 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     32 Bit       Adders := 1     
-+---Registers : 
-	               32 Bit    Registers := 1     
-	                1 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input     32 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 1     
-Module ssd_ctrl 
-Detailed RTL Component Info : 
-+---Muxes : 
-	   2 Input     32 Bit        Muxes := 1     
-	   2 Input      7 Bit        Muxes := 1     
 Module spi_master 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -549,19 +582,19 @@ INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "u_clk100hz/count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_clk100hz/pulse" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_20/i_0/\y2_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_20/i_0/\y2_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\y1_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/\y1_reg[1] )
 INFO: [Synth 8-5545] ROM "u_clk50mhz/count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "u_clk50mhz/pulse" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "hcount" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "vcount" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "vcount" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\y2_reg[0] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/\y2_reg[1] )
-INFO: [Synth 8-5545] ROM "u_clk100hz/count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "u_clk100hz/pulse" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "u_clk1hz/count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "u_clk1hz/pulse" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\y1_reg[0] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/\y1_reg[1] )
 INFO: [Synth 8-5545] ROM "u_clk60hz/count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "u_clk60hz/pulse" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5544] ROM "spi_rx_data" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
@@ -619,7 +652,7 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (\jstk_ctr
 INFO: [Synth 8-3886] merging instance 'jstk_ctrler/spi_master_0/tx_buffer_reg[4]' (FDE) to 'jstk_ctrler/spi_master_0/tx_buffer_reg[5]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\jstk_ctrler/spi_master_0/tx_buffer_reg[5] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:12 ; elapsed = 00:01:25 . Memory (MB): peak = 879.500 ; gain = 669.797
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:48 ; elapsed = 00:02:09 . Memory (MB): peak = 884.363 ; gain = 674.387
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -639,11 +672,61 @@ ROM:
 |CENG3430    | space_ship[0,15] | 64x1          | LUT            | 
 |CENG3430    | space_ship[0,16] | 64x1          | LUT            | 
 |CENG3430    | space_ship[0,17] | 64x1          | LUT            | 
-|CENG3430    | space_ship[0,10] | 64x1          | LUT            | 
-|CENG3430    | space_ship[0,11] | 64x1          | LUT            | 
-|CENG3430    | space_ship[0,15] | 64x1          | LUT            | 
-|CENG3430    | space_ship[0,16] | 64x1          | LUT            | 
-|CENG3430    | space_ship[0,17] | 64x1          | LUT            | 
+|CENG3430    | game_over[0,1]   | 64x1          | LUT            | 
+|CENG3430    | game_over[0,2]   | 64x1          | LUT            | 
+|CENG3430    | game_over[0,3]   | 64x1          | LUT            | 
+|CENG3430    | game_over[0,4]   | 64x1          | LUT            | 
+|CENG3430    | game_over[0,5]   | 64x1          | LUT            | 
+|CENG3430    | game_over[0,6]   | 64x1          | LUT            | 
+|CENG3430    | game_over[0,17]  | 64x1          | LUT            | 
+|CENG3430    | game_over[0,20]  | 64x1          | LUT            | 
+|CENG3430    | game_over[0,22]  | 64x1          | LUT            | 
+|CENG3430    | game_over[0,23]  | 64x1          | LUT            | 
+|CENG3430    | game_over[0,24]  | 64x1          | LUT            | 
+|CENG3430    | game_over[0,25]  | 64x1          | LUT            | 
+|CENG3430    | game_over[0,26]  | 64x1          | LUT            | 
+|CENG3430    | game_over[0,33]  | 64x1          | LUT            | 
+|CENG3430    | game_over[0,34]  | 64x1          | LUT            | 
+|CENG3430    | game_over[0,35]  | 64x1          | LUT            | 
+|CENG3430    | game_over[0,36]  | 64x1          | LUT            | 
+|CENG3430    | game_over[0,37]  | 64x1          | LUT            | 
+|CENG3430    | game_over[0,45]  | 64x1          | LUT            | 
+|CENG3430    | game_over[0,46]  | 64x1          | LUT            | 
+|CENG3430    | game_over[0,47]  | 64x1          | LUT            | 
+|CENG3430    | game_over[0,48]  | 64x1          | LUT            | 
+|CENG3430    | game_over[0,55]  | 64x1          | LUT            | 
+|CENG3430    | game_over[0,84]  | 64x1          | LUT            | 
+|CENG3430    | game_over[0,90]  | 64x1          | LUT            | 
+|CENG3430    | game_over[0,91]  | 64x1          | LUT            | 
+|CENG3430    | game_over[0,92]  | 64x1          | LUT            | 
+|CENG3430    | game_over[0,93]  | 64x1          | LUT            | 
+|CENG3430    | game_over[0,94]  | 64x1          | LUT            | 
+|CENG3430    | game_over[0,95]  | 64x1          | LUT            | 
+|CENG3430    | game_over[0,96]  | 64x1          | LUT            | 
+|CENG3430    | game_over[0,97]  | 64x1          | LUT            | 
+|CENG3430    | game_over[0,103] | 64x1          | LUT            | 
+|CENG3430    | game_over[0,104] | 64x1          | LUT            | 
+|CENG3430    | game_over[0,105] | 64x1          | LUT            | 
+|CENG3430    | game_over[0,106] | 64x1          | LUT            | 
+|CENG3430    | game_over[0,107] | 64x1          | LUT            | 
+|CENG3430    | game_over[0,127] | 64x1          | LUT            | 
+|CENG3430    | game_over[0,128] | 64x1          | LUT            | 
+|CENG3430    | game_over[0,129] | 64x1          | LUT            | 
+|CENG3430    | game_over[0,130] | 64x1          | LUT            | 
+|CENG3430    | game_over[0,131] | 64x1          | LUT            | 
+|CENG3430    | game_over[0,132] | 64x1          | LUT            | 
+|CENG3430    | game_over[0,133] | 64x1          | LUT            | 
+|CENG3430    | game_over[0,134] | 64x1          | LUT            | 
+|CENG3430    | game_over[0,135] | 64x1          | LUT            | 
+|CENG3430    | game_over[0,149] | 64x1          | LUT            | 
+|CENG3430    | game_over[0,150] | 64x1          | LUT            | 
+|CENG3430    | game_over[0,151] | 64x1          | LUT            | 
+|CENG3430    | game_over[0,155] | 64x1          | LUT            | 
+|CENG3430    | game_over[0,156] | 64x1          | LUT            | 
+|CENG3430    | game_over[0,164] | 64x1          | LUT            | 
+|CENG3430    | game_over[0,165] | 64x1          | LUT            | 
+|CENG3430    | game_over[0,166] | 64x1          | LUT            | 
+|CENG3430    | game_over[0,167] | 64x1          | LUT            | 
 |CENG3430    | space_ship[0,10] | 64x1          | LUT            | 
 |CENG3430    | space_ship[0,11] | 64x1          | LUT            | 
 |CENG3430    | space_ship[0,15] | 64x1          | LUT            | 
@@ -676,12 +759,12 @@ Report RTL Partitions:
 |15    |CENG3430__GB14 |           1|      1959|
 |16    |CENG3430__GB15 |           1|      1959|
 |17    |CENG3430__GB16 |           1|      1959|
-|18    |CENG3430__GB17 |           1|      6011|
-|19    |CENG3430__GB18 |           1|      1711|
-|20    |CENG3430__GB19 |           1|      3938|
-|21    |CENG3430__GB20 |           1|      4663|
-|22    |CENG3430__GB21 |           1|      4953|
-|23    |CENG3430__GB22 |           1|      1959|
+|18    |CENG3430__GB17 |           1|      6678|
+|19    |CENG3430__GB18 |           1|      1774|
+|20    |CENG3430__GB19 |           1|      1745|
+|21    |CENG3430__GB20 |           1|      3663|
+|22    |CENG3430__GB21 |           1|      2832|
+|23    |CENG3430__GB22 |           1|      7787|
 |24    |CENG3430__GB23 |           1|      1959|
 |25    |CENG3430__GB24 |           1|      1959|
 |26    |CENG3430__GB25 |           1|      1959|
@@ -695,8 +778,8 @@ Report RTL Partitions:
 |34    |CENG3430__GB33 |           1|      1959|
 |35    |CENG3430__GB34 |           1|      1959|
 |36    |CENG3430__GB35 |           1|      1959|
-|37    |CENG3430__GB36 |           1|      2671|
-|38    |CENG3430__GB37 |           1|      1959|
+|37    |CENG3430__GB36 |           1|      1959|
+|38    |CENG3430__GB37 |           1|      2671|
 |39    |CENG3430__GB38 |           1|      1959|
 |40    |CENG3430__GB39 |           1|      1959|
 |41    |CENG3430__GB40 |           1|      1959|
@@ -704,6 +787,7 @@ Report RTL Partitions:
 |43    |CENG3430__GB42 |           1|      1959|
 |44    |CENG3430__GB43 |           1|      1959|
 |45    |CENG3430__GB44 |           1|      1959|
+|46    |CENG3430__GB45 |           1|      1959|
 +------+---------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Timing Optimization
@@ -712,10 +796,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:19 ; elapsed = 00:01:32 . Memory (MB): peak = 896.301 ; gain = 686.598
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:57 ; elapsed = 00:02:18 . Memory (MB): peak = 906.813 ; gain = 696.836
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:23 ; elapsed = 00:01:35 . Memory (MB): peak = 942.008 ; gain = 732.305
+Finished Timing Optimization : Time (s): cpu = 00:02:02 ; elapsed = 00:02:24 . Memory (MB): peak = 954.105 ; gain = 744.129
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -739,12 +823,12 @@ Report RTL Partitions:
 |15    |CENG3430__GB14 |           1|      1141|
 |16    |CENG3430__GB15 |           1|      1141|
 |17    |CENG3430__GB16 |           1|      1141|
-|18    |CENG3430__GB17 |           1|      6011|
-|19    |CENG3430__GB18 |           1|      1707|
-|20    |CENG3430__GB19 |           1|      3938|
-|21    |CENG3430__GB20 |           1|      4663|
-|22    |CENG3430__GB21 |           1|      4953|
-|23    |CENG3430__GB22 |           1|      1141|
+|18    |CENG3430__GB17 |           1|      6678|
+|19    |CENG3430__GB18 |           1|      1774|
+|20    |CENG3430__GB19 |           1|      1745|
+|21    |CENG3430__GB20 |           1|      3663|
+|22    |CENG3430__GB21 |           1|      2832|
+|23    |CENG3430__GB22 |           1|      7787|
 |24    |CENG3430__GB23 |           1|      1141|
 |25    |CENG3430__GB24 |           1|      1141|
 |26    |CENG3430__GB25 |           1|      1141|
@@ -758,8 +842,8 @@ Report RTL Partitions:
 |34    |CENG3430__GB33 |           1|      1141|
 |35    |CENG3430__GB34 |           1|      1141|
 |36    |CENG3430__GB35 |           1|      1141|
-|37    |CENG3430__GB36 |           1|      1853|
-|38    |CENG3430__GB37 |           1|      1141|
+|37    |CENG3430__GB36 |           1|      1141|
+|38    |CENG3430__GB37 |           1|      1853|
 |39    |CENG3430__GB38 |           1|      1141|
 |40    |CENG3430__GB39 |           1|      1141|
 |41    |CENG3430__GB40 |           1|      1141|
@@ -767,12 +851,13 @@ Report RTL Partitions:
 |43    |CENG3430__GB42 |           1|      1141|
 |44    |CENG3430__GB43 |           1|      1141|
 |45    |CENG3430__GB44 |           1|      1141|
+|46    |CENG3430__GB45 |           1|      1141|
 +------+---------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:30 ; elapsed = 00:01:42 . Memory (MB): peak = 959.590 ; gain = 749.887
+Finished Technology Mapping : Time (s): cpu = 00:02:13 ; elapsed = 00:02:34 . Memory (MB): peak = 972.113 ; gain = 762.137
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -796,7 +881,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:31 ; elapsed = 00:01:44 . Memory (MB): peak = 959.590 ; gain = 749.887
+Finished IO Insertion : Time (s): cpu = 00:02:15 ; elapsed = 00:02:37 . Memory (MB): peak = 972.113 ; gain = 762.137
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -809,7 +894,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:31 ; elapsed = 00:01:44 . Memory (MB): peak = 959.590 ; gain = 749.887
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:15 ; elapsed = 00:02:37 . Memory (MB): peak = 972.113 ; gain = 762.137
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -821,25 +906,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:32 ; elapsed = 00:01:45 . Memory (MB): peak = 959.590 ; gain = 749.887
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:16 ; elapsed = 00:02:38 . Memory (MB): peak = 972.113 ; gain = 762.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:32 ; elapsed = 00:01:45 . Memory (MB): peak = 959.590 ; gain = 749.887
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:16 ; elapsed = 00:02:38 . Memory (MB): peak = 972.113 ; gain = 762.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:32 ; elapsed = 00:01:45 . Memory (MB): peak = 959.590 ; gain = 749.887
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:17 ; elapsed = 00:02:38 . Memory (MB): peak = 972.113 ; gain = 762.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:32 ; elapsed = 00:01:45 . Memory (MB): peak = 959.590 ; gain = 749.887
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:17 ; elapsed = 00:02:38 . Memory (MB): peak = 972.113 ; gain = 762.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -856,18 +941,18 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     4|
-|2     |CARRY4 |  1761|
-|3     |LUT1   |  1431|
-|4     |LUT2   |  6422|
-|5     |LUT3   |   573|
-|6     |LUT4   |  3037|
-|7     |LUT5   |   670|
-|8     |LUT6   |  5718|
-|9     |MUXF7  |  1048|
-|10    |MUXF8  |   244|
+|2     |CARRY4 |  1777|
+|3     |LUT1   |  1436|
+|4     |LUT2   |  6502|
+|5     |LUT3   |   568|
+|6     |LUT4   |  3048|
+|7     |LUT5   |   692|
+|8     |LUT6   |  5855|
+|9     |MUXF7  |  1053|
+|10    |MUXF8  |   241|
 |11    |FDCE   |    32|
 |12    |FDPE   |     4|
-|13    |FDRE   |  1218|
+|13    |FDRE   |  1226|
 |14    |FDSE   |    66|
 |15    |IBUF   |     6|
 |16    |OBUF   |    24|
@@ -878,24 +963,24 @@ Report Instance Areas:
 +------+-----------------+------------------------------+------+
 |      |Instance         |Module                        |Cells |
 +------+-----------------+------------------------------+------+
-|1     |top              |                              | 22259|
-|2     |  RGBdriver      |RGB_driver                    |  6775|
+|1     |top              |                              | 22535|
+|2     |  RGBdriver      |RGB_driver                    |  7042|
 |3     |    u_clk50mhz   |clock_divider__parameterized7 |    83|
 |4     |  jstk_ctrler    |pmod_joystick                 |   307|
 |5     |    spi_master_0 |spi_master                    |   165|
-|6     |  ssd_ctrler     |ssd_ctrl                      |    99|
-|7     |    u_clk100hz   |clock_divider                 |    99|
+|6     |  ssd_ctrler     |ssd_ctrl                      |   101|
+|7     |    u_clk100hz   |clock_divider                 |   101|
 |8     |  u_clk1hz       |clock_divider__parameterized1 |    83|
 |9     |  u_clk60hz      |clock_divider__parameterized3 |    83|
 +------+-----------------+------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:32 ; elapsed = 00:01:45 . Memory (MB): peak = 959.590 ; gain = 749.887
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:17 ; elapsed = 00:02:38 . Memory (MB): peak = 972.113 ; gain = 762.137
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:12 ; elapsed = 00:01:32 . Memory (MB): peak = 959.590 ; gain = 396.895
-Synthesis Optimization Complete : Time (s): cpu = 00:01:32 ; elapsed = 00:01:45 . Memory (MB): peak = 959.590 ; gain = 749.887
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:51 ; elapsed = 00:02:19 . Memory (MB): peak = 972.113 ; gain = 411.180
+Synthesis Optimization Complete : Time (s): cpu = 00:02:17 ; elapsed = 00:02:39 . Memory (MB): peak = 972.113 ; gain = 762.137
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 1767 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 1783 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -903,9 +988,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-222 Infos, 86 Warnings, 0 Critical Warnings and 0 Errors encountered.
+250 Infos, 86 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:33 ; elapsed = 00:01:46 . Memory (MB): peak = 959.590 ; gain = 749.887
+synth_design: Time (s): cpu = 00:02:19 ; elapsed = 00:02:39 . Memory (MB): peak = 972.113 ; gain = 762.137
 INFO: [Common 17-1381] The checkpoint 'C:/Users/user/Documents/.git/space_race/lab05.runs/synth_1/CENG3430.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.083 . Memory (MB): peak = 959.590 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Fri May 19 01:45:24 2023...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.128 . Memory (MB): peak = 972.113 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri May 19 03:11:51 2023...

@@ -18,11 +18,11 @@ set_property board_part em.avnet.com:zed:part0:1.3 [current_project]
 set_property ip_output_repo c:/Users/user/Documents/.git/space_race/lab05.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
-  C:/Users/user/Downloads/spi_master.vhd
   C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/clock_divider.vhd
+  C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/spi_master.vhd
   C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/ssd_ctrl.vhd
-  C:/Users/user/Downloads/pmod_joystick.vhd
   C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/RGB_driver.vhd
+  C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/pmod_joystick.vhd
   C:/Users/user/Documents/.git/space_race/lab05.srcs/sources_1/new/lab05.vhd
 }
 foreach dcp [get_files -quiet -all *.dcp] {
